@@ -1,0 +1,182 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic", Futura, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    display: flex;
+    flex-direction: column; /* empilha verticalmente */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("./Imagens/fotoSITEPRINCIPAL.png") no-repeat center center fixed;
+    background-size: cover;
+    color: hsl(0, 36%, 96%);
+}
+
+/* Logo */
+.logo {
+    width: 500px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Caixa principal */
+.cabecalho {
+    text-align: center;
+    background-color: #000000a2;
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+}
+
+/* Container principal */
+.language-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+/* Cada bloco de idioma */
+.language-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+/* Efeito hover */
+.language-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* Bandeiras */
+.language-box img {
+    width: 200px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Nome do idioma */
+.language-box p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #7e6f58;
+    margin-bottom: 10px;
+}
+
+/* Botões */
+.pt-BR, .en {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #877961;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Hover dos botões */
+.pt-BR:hover, .en:hover {
+    background-color: #6e604d;
+}
+
+/* Animação opcional da logo */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ======== VERSÃO MOBILE ======== */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        padding: 40px 10px;
+        background-attachment: scroll; /* evita bug no celular */
+    }
+
+    .cabecalho {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .language-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .language-box {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .language-box img {
+        width: 150px;
+    }
+
+    .language-box p {
+        font-size: 16px;
+    }
+
+    .pt-BR, .en {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+}
+
+/* ======== VERSÃO SUPER PEQUENA (CELULAR ANTIGO) ======== */
+@media (max-width: 768px) {
+    body {
+        padding-top: 20px;
+        background-attachment: scroll;
+    }
+
+    .logo {
+        width: 300px;
+        margin-bottom: 15px;
+    }
+
+    .cabecalho {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .language-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .language-box {
+        width: 95%;
+        padding: 25px;
+    }
+
+    .language-box img {
+        width: 180px;
+    }
+
+    .language-box p {
+        font-size: 18px;
+    }
+
+    .pt-BR, .en {
+        font-size: 15px;
+        padding: 10px 0;
+    }
+}
+

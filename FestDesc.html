@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiago's birthday</title>
+    <link rel="stylesheet" href="FestDesc.css">
+    <link rel="icon" type="image/jpg" href="./Imagens/LogoTiago40th.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+    function mostrarInfo(tipo) {
+        const infoBox = document.getElementById('infoBox');
+        let conteudo = '';
+
+        switch(tipo) {
+            case 'guia':
+                conteudo = `
+                    <h2>SUGGESTED SEVEN-DAY RIO ITINERARY</h2>
+                    <p><i>"This suggestive seven-day itinerary is designed for first-time visitors or those planning a longer stay before the weekend festivities. We highly suggest international guests located in the United States return back home no later than Monday, May 2nd, to  avoid World Cup higher air ticket prices. "</i><br> - 
+                        <b>Tiago Mazzotti</b></p>
+                         <a href="./Gui7days.html">
+                            <button class="menu-btn" style="margin-top: 10px;">See more details</button>
+                        </a>
+                `;
+                break;
+            case 'trajes':
+                conteudo = `
+                    <h2>DRESS CODE </h2>
+                    <p>“"The greatest lesson learned as an Event Producer is the ability to transform an occasion into a narrative with themes, 
+                        costumes, and lifelong memories. The dress code is an essential part of creating something unique and exclusive. 
+                        Black tie with Tropical Inspirations was my choice so that all guests could elevate their creative side, step out of their 
+                        comfort zone, and transform the atmosphere into a unique moment on a glamorous night in the tropical winter in Rio de Janeiro."
+                        <br> - <b>Tiago Mazzotti.</b> </p>
+                        <a href="DressCode.html">
+                            <button class="menu-btn" style="margin-top: 10px;">See more details</button>
+                        </a>
+                `;
+                break;
+            case 'kit':
+                conteudo = `
+                    <h2>TRAVEL KIT</h2>
+                    <p>"The Travel Kit was designed to help everyone plan their trip to Rio de Janeiro effectively, 
+                        with exclusive discounts for my guests. The Fairmont Rio hotel offers the biggest discount because 
+                        it’s producing the main event on Saturday, May 30th. A selection of four-star hotels in the Ipanema neighborhood 
+                        (near the event) is also part of our selection for a democratic portfolio.”<br> - <b>Tiago Mazzotti</b></p>
+                        <a href="KitTraveler.html">
+                            <button class="menu-btn" style="margin-top: 10px;">See more details</button>
+                        </a>
+                `;
+                break;
+            case 'rsvp':
+                conteudo = `
+                    <h2>Confirmation of Attendance</h2>
+                    <p>Please fill out the form below to confirm your attendance at the event.</p>
+                    <a href="rsvp.html">
+                            <button class="menu-btn" style="margin-top: 10px;">See more details</button>
+                        </a>
+                `;
+                break;
+            case 'calendario':
+                conteudo = `
+                    <h2>FESTIVITIES</h2>
+                    <p>"The weekend between May 29th and June 1st is packed with festivities beyond the Saturday night Black Tie party at the Fairmont Rio. 
+                        I hope everyone has the opportunity to join us for a casual gathering at Sugarloaf Mountain to kick off the celebrations on Friday 
+                        afternoon and cure their hangovers with mimosas, bloody marys, and drag queens for a fun brunch on Sunday."<br>- <b>Tiago Mazzotti</b></p>
+                    <a href="Calendar.html">
+                            <button class="menu-btn" style="margin-top: 10px;">See more details</button>
+                        </a>
+                `;
+                break;
+            case 'seguranca':
+            conteudo = `
+                <h2>Tip for your safety and that of other guests</h2>
+                <p><i>Rio de Janeiro is the second-most-populous city in Brazil, known for its stunning natural setting, vibrant culture and iconic landmarks. It’s extremely important to adapt your travel awareness due to its complex socio-economic contrast and safe district boundaries.</i><br>- <b>Tiago Mazzotti</b></p>
+                <a href="Safety.html">
+                        <button class="menu-btn" style="margin-top: 10px;">See more details</button>
+                    </a>
+            `;
+            break;
+        }
+
+        infoBox.innerHTML = conteudo;
+        infoBox.style.display = 'block';
+    }
+    </script>
+
+    
+</head>
+<body>
+    <a href="./index.html"><img src="./Imagens/LogoTiagoTransparente.png" alt="Logo do Tiago 40th" class="logo"></a>
+    <div class="menu-container">
+        <button class="menu-btn" onclick="mostrarInfo('kit')">TRAVEL KIT</button>
+        <button class="menu-btn" onclick="mostrarInfo('rsvp')">RSVP</button>
+        <button class="menu-btn" onclick="mostrarInfo('calendario')">FESTIVITIES</button>
+        <button class="menu-btn" onclick="mostrarInfo('trajes')">DRESS CODE</button>
+        <button class="menu-btn" onclick="mostrarInfo('seguranca')">SAFETY TIPS</button>
+        <button class="menu-btn" onclick="mostrarInfo('guia')">7 DAYS IN RIO (GUIDE)</button>
+    </div>
+
+    <div id="infoBox" class="info-area"></div>
+
+
+    <div class="cabecalho">
+        <h2>Welcome to Tiago Mazzotti's 40th Birthday Celebration in Rio!</h2>
+        <p>"This website was created to give guests from around the world access to all the important information needed for an 
+            effective and safe travel planning during my 40th Birthday Celebrations in the wonderful city of Rio de Janeiro! Whether you 
+            want to plan just a weekend or a whole week, everything has been lovingly crafted for a grand welcome to my home country and to 
+            everyone who has been part of my story. Don't forget to RSVP! See you in Rio!" - Tiago Mazzotti. 
+</p> 
+    </div>
+    <div class="SobreRio">
+        <h2>ABOUT RIO</h2>
+        <p>The city of Rio de Janeiro was chosen for this celebration because it has been Brazil’s most popular destination for centuries. 
+            Many of our guests will have the privilege of experiencing Brazil for the first time. Rio represents Brazilian diversity, featuring 
+            natural beauty, music, cuisine, culture, and global recognition through famous Hollywood films and international attractions. 
+            It draws thousands of spectators to Copacabana Beach each year. Demand for Rio reached unprecedented levels in 2024 and 2025, with the city 
+            recording its highest-ever number of foreign visitors. We acknowledge the security challenges Brazil has faced in recent decades, and we have 
+            planned everything to ensure a positive experience, including a comprehensive security and comfort plan for all guests.
+</p>
+    </div>
+    <!-- MENU -->
+
+
+
+</body>
+</html>

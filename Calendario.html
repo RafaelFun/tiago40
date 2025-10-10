@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aniversario do Tiago</title>
+    <link rel="stylesheet" href="Calendario.css">
+    <link rel="icon" type="image/jpg" href="./Imagens/LogoTiago40th.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+function mostrarInfo(tipo) {
+    const infoBox = document.getElementById('infoBox');
+    let conteudo = '';
+
+    switch(tipo) {
+        case 'trajes':
+            conteudo = `
+                <h2>DRESS CODE </h2>
+                <p><i>“O aprendizado maior como Produtor de Eventos é a habilidade de transformar uma ocasião em uma narrativa com temas,
+                     fantasias e recordações para o resto da vida. O dress code é uma parte essencial para criar algo único e memorável. 
+                     O black tie com Inspirações Tropicais foi a minha escolha para que todos os convidados possam elevar o seu lado criativo,
+                      sair da zona de conforto e transformar o ambiente em um momento único em uma noite de glamour no inverno tropical no Rio de Janeiro.”</i>
+                     <br> - <b>Tiago Mazzotti.</b> </p>
+                     <a href="Trajes.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'kit':
+            conteudo = `
+                <h2>Kit de Viagem</h2>
+                <p><i>“O Kit Viagem foi elaborado para que todos possam planejar sua viagem para o Rio de Janeiro de maneira eficaz e com descontos
+                     exclusivos para meus convidados. O hotel Fairmont Rio oferece o maior desconto por estar produzindo o evento principal do sábado, 
+                     dia 30 de maio. Uma seleção de hotéis quatro estrelas no bairro de Ipanema (próximo ao evento) também faz parte da nossa seleção 
+                     para um portfólio democrático.”</i><br> - <b>Tiago Mazzotti</b></p>
+                     <a href="KitViagem.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'rsvp':
+            conteudo = `
+                <h2>Confirmação de Presença</h2>
+                <p>Preencha o formulário abaixo para confirmar sua presença no evento.</p>
+                <a href="ConfirmarPresenca.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'guia':
+            conteudo = `
+                <h2>7 SUGESTÃO ROTEIRO DE SETE DIAS NO RIO (Guia)</h2>
+                <p><i>“Este roteiro sugestivo de sete dias foi elaborado para visitantes de primeira viagem ou para aqueles que planejam uma estadia mais 
+                    longa antes das festividades do fim de semana. Recomendamos fortemente que os hóspedes internacionais que residem nos Estados Unidos 
+                    retornem para casa até segunda-feira, 2 de maio, para evitar os preços mais altos das passagens aéreas para a Copa do Mundo.”</i><br> - 
+                    <b>Tiago Mazzotti</b></p>
+                     <a href="./Guia7Dias.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+            case 'seguranca':
+            conteudo = `
+                <h2>Dica para sua segurança e dos outros convidados </h2>
+                <p><i>"O Rio de Janeiro é a segunda cidade mais populosa do Brasil, conhecida por sua natureza deslumbrante, cultura vibrante e monumentos emblemáticos. É extremamente importante adaptar sua estratégia de viagem devido ao seu complexo contraste socioeconômico e aos limites seguros de seus bairros."</i><br>- <b>Tiago Mazzotti</b></p>
+                <a href="DicasSeguranca.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+    }
+
+    infoBox.innerHTML = conteudo;
+    infoBox.style.display = 'block';
+}
+</script>
+</head>
+<body>
+    <a href="./index.html"><img src="./Imagens/LogoTiagoTransparente.png" alt="Logo do Tiago 40th" class="logo"></a>
+
+    <div class="menu-container">
+        <a href="./DescricaoFesta.html"><button class="menu-btn">SITE PRINCIPAL</button></a>
+        <button class="menu-btn" onclick="mostrarInfo('kit')">KIT DE VIAGEM</button>
+        <button class="menu-btn" onclick="mostrarInfo('rsvp')">CONFIRMAR PRESENÇA</button>
+        <button class="menu-btn" onclick="mostrarInfo('trajes')">DRESS CODE</button>
+        <button class="menu-btn" onclick="mostrarInfo('seguranca')">DICAS DE SEGURANÇA</button>
+        <button class="menu-btn" onclick="mostrarInfo('guia')">7 DIAS NO RIO (GUIA)</button>
+    </div>
+<div id="infoBox" class="info-area"></div>
+    <div class="cabecalho">
+        <h1><p>SEXTA-FEIRA 14:00 (29&nbsp;de&nbsp;MAIO)</p></h1>
+        <p>Sexta-feira começam as festividades no topo de um dos maiores cartões postais do mundo. 
+            O Pão de Açúcar oferece uma vista única do Rio de Janeiro abençoado pelo famoso pôr do sol carioca. 
+            Deejays e Drinks estarão disponíveis no local.</p>
+            <b>Horário</b>: 14:00<br>
+            <b>Local</b>: Pão de Açúcar<br>
+            <b>Dress Code</b>: branco, cores neutras, sandálias e tecidos leves.
+            <p><b>* Mais detalhes sobre esta celebração estarão disponíveis neste site em ABRIL 2026</b></p>
+    </div>
+    <div class="cabecalho">
+        <h1>SÁBADO 20:00 (30&nbsp;de&nbsp;MAIO)</h1>
+        <p>“Uma Noite Tropical Memorável no Rio” (An Opulent Tropical Night in Rio) é o tema para a festa principal no sábado à noite no Fairmont Rio. 
+            Uma celebração com inspirações tropicais e uma leve influência de Hollywood. O evento foi inspirado nos bailes de gala dos anos 50 e 60 no 
+            Rio de Janeiro com convidados do mundo todo celebrando a música e sabores únicos do Brasil. Este evento é restrito black-tie com início às 
+            19:00 até 12:30.<br><br> <b>AFTERPARTY</b> em local secreto será realizado após o evento principal para os convidados maiores de 18 anos.</p><br>
+            <b>Horário</b>: 19:00 <br>
+            <b>Local</b>: Hotel Fairmont Rio<br>
+             <b>Dress Code</b>: Black Tie com Inspirações Tropicais
+    </div>
+    <div class="cabecalho">
+        <h1>DOMINGO 13:00 (1&nbsp;de&nbsp;JUNHO)</h1>
+        <p>“Brunch & Drag Queens Made in Brazil” - Um almoço misturado com café da manhã com mimosas (champagne + suco de laranja) e 
+            bloody marys (suco de tomate + vodka) para curar a ressaca e encerrar as festividades com o humor elevado por drag queens 100% brasileiras.
+            Mais detalhes sobre o horário e local deste evento estarão disponíveis neste site em abril de 2026.<br> <br><b>Horário</b>: 13:00 <br><b>Local</b>: Anuncio em Abril 2026<br><b>Dress Code</b>: Casual</p>
+            <p><b>* Mais detalhes sobre esta celebração estarão disponíveis neste site em ABRIL 2026</b></p>
+</body>
+</html>

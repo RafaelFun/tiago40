@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aniversario do Tiago</title>
+    <link rel="stylesheet" href="DicasSeguranca.css">
+    <link rel="icon" type="image/jpg" href="./Imagens/LogoTiago40th.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<script>
+function mostrarInfo(tipo) {
+    const infoBox = document.getElementById('infoBox');
+    let conteudo = '';
+
+    switch(tipo) {
+        case 'trajes':
+            conteudo = `
+                <h2>DRESS CODE </h2>
+                <p><i>“O aprendizado maior como Produtor de Eventos é a habilidade de transformar uma ocasião em uma narrativa com temas,
+                     fantasias e recordações para o resto da vida. O dress code é uma parte essencial para criar algo único e memorável. 
+                     O black tie com Inspirações Tropicais foi a minha escolha para que todos os convidados possam elevar o seu lado criativo,
+                      sair da zona de conforto e transformar o ambiente em um momento único em uma noite de glamour no inverno tropical no Rio de Janeiro.”</i>
+                     <br> - <b>Tiago Mazzotti.</b> </p>
+                     <a href="Trajes.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'kit':
+            conteudo = `
+                <h2>Kit de Viagem</h2>
+                <p><i>“O Kit Viagem foi elaborado para que todos possam planejar sua viagem para o Rio de Janeiro de maneira eficaz e com descontos
+                     exclusivos para meus convidados. O hotel Fairmont Rio oferece o maior desconto por estar produzindo o evento principal do sábado, 
+                     dia 30 de maio. Uma seleção de hotéis quatro estrelas no bairro de Ipanema (próximo ao evento) também faz parte da nossa seleção 
+                     para um portfólio democrático.”</i><br> - <b>Tiago Mazzotti</b></p>
+                     <a href="KitViagem.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'rsvp':
+            conteudo = `
+                <h2>Confirmação de Presença</h2>
+                <p>Preencha o formulário abaixo para confirmar sua presença no evento.</p>
+                <a href="ConfirmarPresenca.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'calendario':
+            conteudo = `
+                <h2>FESTIVIDADES </h2>
+                <p><i>“O final de semana entre 29 de maio e 1 de junho está reservado para diversas festividades além da festa Black Tie no sábado à noite 
+                    no Fairmont Rio. Espero que todos tenham a oportunidade de participar em um encontro casual no Pão de Açúcar para iniciar as celebrações 
+                    na sexta feira à tarde e curar a ressaca com mimosas, bloody marys e drag queens no domingo para um divertido brunch.”</i><br>- <b>Tiago Mazzotti</b></p>
+                <a href="Calendario.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'guia':
+            conteudo = `
+                <h2>7 SUGESTÃO ROTEIRO DE SETE DIAS NO RIO (Guia)</h2>
+                <p><i>“Este roteiro sugestivo de sete dias foi elaborado para visitantes de primeira viagem ou para aqueles que planejam uma estadia mais 
+                    longa antes das festividades do fim de semana. Recomendamos fortemente que os hóspedes internacionais que residem nos Estados Unidos 
+                    retornem para casa até segunda-feira, 2 de maio, para evitar os preços mais altos das passagens aéreas para a Copa do Mundo.”</i><br> - 
+                    <b>Tiago Mazzotti</b></p>
+                     <a href="./Guia7Dias.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+    }
+
+    infoBox.innerHTML = conteudo;
+    infoBox.style.display = 'block';
+}
+</script>
+
+    
+</head>
+<body>
+    <a href="./index.html"><img src="./Imagens/LogoTiagoTransparente.png" alt="Logo do Tiago 40th" class="logo"></a>
+
+    <div class="menu-container">
+        <a href="./DescricaoFesta.html"><button class="menu-btn">SITE PRINCIPAL</button></a>
+        <button class="menu-btn" onclick="mostrarInfo('kit')">KIT DE VIAGEM</button>
+        <button class="menu-btn" onclick="mostrarInfo('rsvp')">CONFIRMAR PRESENÇA</button>
+        <button class="menu-btn" onclick="mostrarInfo('calendario')">FESTIVIDADES</button>
+        <button class="menu-btn" onclick="mostrarInfo('trajes')">DRESS CODE</button>
+        <button class="menu-btn" onclick="mostrarInfo('guia')">7 DIAS NO RIO (GUIA)</button>
+    </div>
+    <div id="infoBox" class="info-area"></div>
+    <div class="cabecalho">
+        <h1>DICAS IMPORTANTES DE SEGURANÇA</h1>
+        <p><b>O Rio de Janeiro é a segunda cidade mais populosa do Brasil, conhecida por sua natureza deslumbrante, cultura vibrante e 
+            monumentos emblemáticos. É extremamente importante adaptar sua estratégia de viagem devido ao seu complexo contraste socioeconômico e 
+            aos limites seguros de seus bairros.</b></p><br>
+        <p>O mapa abaixo indica os bairros mais seguros, projetados para manter turistas e moradores longe de áreas urbanas com altos índices de criminalidade. 
+            <b>Ipanema, Copacabana, Leblon, Leme, Pão de Açúcar</b> e <b>Cristo Redentor</b> são locais bem fiscalizados pela polícia local. Por favor, permaneça dentro da 
+            zona destacada para seu conforto e segurança.</p><br><br>
+            <div class="images"><img src="./Imagens/south_zone_rio.jpg" alt="Mapa da Zona Sul do Rio de Janeiro" class="mapa"></div>
+
+        <h3>Pequenos furtos ainda podem acontecer, mas são menos prováveis ​​quando os visitantes adaptam suas atividades turísticas diárias com as cinco dicas 
+            importantes de segurança a seguir:</h3>
+            <list>
+                <li>Evite joias, relógios e itens pessoais caros ao visitar locais públicos ou a praia.</li><br>
+                <li>Mantenha seu celular sempre no bolso da frente ao visitar locais públicos ou a praia. 
+                    Não há problema em tirar fotos, mas fique atento ao usar seu dispositivo em áreas públicas abertas 
+                    (exceto em pontos turísticos onde a segurança é rigorosamente reforçada). Câmeras profissionais são bem-vindas em pontos turísticos.</li><br>
+                <li>Seu documento de identidade, cartão de crédito e algum troco em reais (moeda local) são suficientes ao visitar áreas públicas. Guarde sua carteira, 
+                    vários cartões e passaporte no cofre do hotel. A maioria dos lugares e vendedores ambulantes não aceita dinheiro em espécie.</li><br>
+                <li>Não use transporte público. Uber e táxi estão disponíveis em todos os lugares. Certifique-se de ativar a verificação do seu PIN antes de iniciar sua viagem.</li><br>
+                <li>Mantenha seu estilo casual, simples e neutro ao visitar áreas públicas.</li>
+            </list>
+    </div>
+</body>
+</html>

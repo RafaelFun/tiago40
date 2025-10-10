@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiago's birthday</title>
+    <link rel="stylesheet" href="KitTraveler.css">
+    <link rel="icon" type="image/jpg" href="./Imagens/LogoTiago40th.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+    function mostrarInfo(tipo) {
+        const infoBox = document.getElementById('infoBox');
+        let conteudo = '';
+
+        switch(tipo) {
+            case 'trajes':
+                conteudo = `
+                    <h2>DRESS CODE </h2>
+                    <p>“"The greatest lesson learned as an Event Producer is the ability to transform an occasion into a narrative with themes, 
+                        costumes, and lifelong memories. The dress code is an essential part of creating something unique and exclusive. 
+                        Black tie with Tropical Inspirations was my choice so that all guests could elevate their creative side, step out of their 
+                        comfort zone, and transform the atmosphere into a unique moment on a glamorous night in the tropical winter in Rio de Janeiro."
+                        <br> - <b>Tiago Mazzotti.</b> </p>
+                        <a href="DressCode.html">
+                            <button class="menu-btn" style="margin-top: 10px;">See more details</button>
+                        </a>
+                `;
+                break;
+            case 'guia':
+                conteudo = `
+                    <h2>SUGGESTED SEVEN-DAY RIO ITINERARY</h2>
+                    <p><i>"This suggestive seven-day itinerary is designed for first-time visitors or those planning a longer stay before the weekend festivities. We highly suggest international guests located in the United States return back home no later than Monday, May 2nd, to  avoid World Cup higher air ticket prices. "</i><br> - 
+                        <b>Tiago Mazzotti</b></p>
+                         <a href="./Gui7days.html">
+                            <button class="menu-btn" style="margin-top: 10px;">See more details</button>
+                        </a>
+                `;
+                break;
+            case 'rsvp':
+                conteudo = `
+                    <h2>Confirmation of Attendance</h2>
+                    <p>Please fill out the form below to confirm your attendance at the event.</p>
+                    <a href="rsvp.html">
+                            <button class="menu-btn" style="margin-top: 10px;">See more details</button>
+                        </a>
+                `;
+                break;
+            case 'calendario':
+                conteudo = `
+                    <h2>FESTIVITIES</h2>
+                    <p>"The weekend between May 29th and June 1st is packed with festivities beyond the Saturday night Black Tie party at the Fairmont Rio. 
+                        I hope everyone has the opportunity to join us for a casual gathering at Sugarloaf Mountain to kick off the celebrations on Friday 
+                        afternoon and cure their hangovers with mimosas, bloody marys, and drag queens for a fun brunch on Sunday."<br>- <b>Tiago Mazzotti</b></p>
+                    <a href="Calendar.html">
+                            <button class="menu-btn" style="margin-top: 10px;">See more details</button>
+                        </a>
+                `;
+                break;
+            case 'seguranca':
+            conteudo = `
+                <h2>Tip for your safety and that of other guests</h2>
+                <p><i>Rio de Janeiro is the second-most-populous city in Brazil, known for its stunning natural setting, vibrant culture and iconic landmarks. It’s extremely important to adapt your travel awareness due to its complex socio-economic contrast and safe district boundaries.</i><br>- <b>Tiago Mazzotti</b></p>
+                <a href="Safety.html">
+                        <button class="menu-btn" style="margin-top: 10px;">See more details</button>
+                    </a>
+            `;
+            break;
+        }
+
+        infoBox.innerHTML = conteudo;
+        infoBox.style.display = 'block';
+    }
+    </script>
+</head>
+<body>
+    <a href="./index.html"><img src="./Imagens/LogoTiagoTransparente.png" alt="Logo do Tiago 40th" class="logo"></a>
+    <div class="menu-container">
+        <a href="./FestDesc.html"><button class="menu-btn" onclick="mostrarInfo('DescFest')">MAIN SITE</button></a>
+        <button class="menu-btn" onclick="mostrarInfo('rsvp')">RSVP</button>
+        <button class="menu-btn" onclick="mostrarInfo('calendario')">FESTIVITIES</button>
+        <button class="menu-btn" onclick="mostrarInfo('trajes')">DRESS CODE</button>
+        <button class="menu-btn" onclick="mostrarInfo('seguranca')">SAFETY TIPS</button>
+        <button class="menu-btn" onclick="mostrarInfo('guia')">7 DAYS IN RIO (GUIDE)</button>
+    </div>
+    <div id="infoBox" class="info-area"></div>
+    <div class="Texto">
+        <h1>FAIRMONT RIO</h1>
+        The Fairmont Rio will host the main event on Saturday, May 30th. This incredible 5-star hotel is located on the oceanfront between Ipanema and Copacabana beaches.
+            <br><br><b>All guests will receive a 20% discount on the total cost of their stay. Visit <a href="https://www.fairmontrio.com" target="_blank">www.fairmontrio.com</a> and use the discount code “TIAGO40” to book your reservation. 
+            <br>Tiago will be staying at this hotel throughout the festivities, offering exclusive services to his guests throughout the weekend.<br> Discounted reservations are now available 
+            on the website (subject to availability).</b>
+        <p><b>IMPORTANT</b><br>Please make your reservation with cancellation options as soon as possible. Availability is subject to limitations due to the high number of visitors between Friday (May 29th) and Sunday (June 1st).</p>
+            <!--Ajustar o tamnho do espaço-->
+        <p><b>SPECIAL TIP</b><br>
+        Guests planning to visit Rio for an extended period can stay at different hotels and choose the Fairmont for the weekend only.</p>
+        
+        <div class="Imagem">
+            <img src="./Imagens/fairmont-rio-de-janeiro.jpg" alt="Fairmont Rio">
+        </div>
+    </div>
+
+    <div class="Texto">
+        <h1>ALTERNATIVE HOTELS</h1>
+        <p>The travel agency <b>FEEL TRAVEL VIAGENS</b> in exclusive partnership with our team, has selected hotels with more flexible rates, 
+            approved by Tiago, located near the Fairmont Rio in the Ipanema neighborhood. To check availability and prices, send an email to 
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=karina@feeltravel.com.br" target="_blank"><b>karina@feeltravel.com.br</b></a> or <a href="https://wa.me/+5511947793462" target="_blank"><b>WhatsApp +55 11 94779 3462</b></a> with your name and travel dates for personalized service, 
+            available exclusively to event guests.</p>
+            <div class="ImagemloGO">
+                <img src="./Imagens/Karina logo OFICIAL HD.jpg" alt="Hotéis Alternativos">
+            </div>
+    </div>
+
+    <div class="Texto">
+        <h1>PLANE TICKETS & SHUTTLES</h1>
+        <p><b>All international guests must choose Rio de Janeiro/Galeão International Airport (GIG)</b> 
+            as their final destination (a 45-minute drive to Ipanema). Travelers planning their first trip to Brazil 
+            should make connections in their home country—we do not recommend connections in other Brazilian states or South American countries.</p>
+        <p><b>IMPORTANT</b>: We do NOT recommend using public transportation in Rio de Janeiro during your entire stay. ALWAYS use taxis, Uber, and shuttles to travel short and long distances for your comfort and safety.</p>
+        
+        <h3> INTERNATIONAL & DOMESTIC FLIGHTS</h3>
+        <p>Special-rated air tickets and shuttles are available for guests in partnership with<br></p> <p><b>FEEL TRAVEL VIAGENS</b><br>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=karina@feeltravel.com.br" target="_blank">karina@feeltravel.com.br</a><br>
+        <a href="https://wa.me/+5511947793462" target="_blank">
+            WhatsApp +55 11 94779 3462<br>
+        </a></p>
+        <div class="Imagem">
+            <img src="./Imagens/Aéreo.png" alt="Passagem Aérea">
+        </div>
+    </div>
+    <div class="Importante">
+        <h1>EXTREMELY IMPORTANT<br>
+        BRAZILIAN E-VISA</h1>
+            <p>ALL AMERICANS AND SELECTED FOREIGN VISITORS must obtain an electronic tourist visa at <a href="https://www.gov.br/mre/pt-br/consulado-miami/information-about-visas-in-english/electronic-visitor-visa-e-visa " target="_blank">
+            <b>https://www.gov.br/mre/pt-br/consulado-miami/information-about-visas-in-english/electronic-visitor-visa-e-visa</b></a> before traveling to Brazil. The e-visa is valid for tourism purposes only and allows a stay of up to 90 days.(US$81)<br><br>
+            <img src="./Imagens/passaporte-ou-visto-2.png" alt="Visto Brasil"> 
+    </div>
+</body>
+</html>

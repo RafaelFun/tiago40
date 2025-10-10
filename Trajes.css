@@ -1,0 +1,93 @@
+body {
+    height: 100vh;
+    background: url("./Imagens/DRESSCODE\ BACKGROUND.png") no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Century Gothic", Futura, sans-serif;
+    color: white;
+    text-align: center;
+}
+.Referencias {
+    text-align: center;
+    margin: 20px auto; /* centraliza horizontalmente */
+    background-color: #fff4d1de;
+    padding: 30px;
+    border-radius: 20px;
+    display: block; /* ocupa linha inteira */
+    color: rgb(0, 0, 0);
+    max-width: 800px;
+}
+.cabecalho {
+   text-align: center;
+    margin: 20px auto; /* centraliza horizontalmente */
+    background-color: #fff4d1de;
+    padding: 30px;
+    border-radius: 20px;
+    display: block; /* ocupa linha inteira */
+    color: rgb(0, 0, 0);
+    max-width: 800px; /
+}
+/* Menu de botões */
+.menu-container {
+    
+     text-align: center;
+    margin: 20px auto; /* centraliza horizontalmente */
+    background-color:rgba(0, 24, 4, 0.664);
+    padding: 30px;
+    border-radius: 20px;
+    display: block; /* ocupa linha inteira */
+    color: white;
+    max-width: 800px; 
+        margin-top: -10px;
+}
+
+.menu-btn {
+    background-color: #DAA520;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+        margin-top: 10px;
+}
+
+.menu-btn:hover {
+    background-color: #DAA520;
+}
+
+/* Área que aparece abaixo dos botões */
+.info-area {
+    max-width: 900px;
+    background-color: #5f5f4ed2;
+    margin: 40px auto 0;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    display: none; /* começa escondida */
+    animation: fadeIn 0.4s ease;
+}
+
+/* Animação suave */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.logo {
+    width: 200px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+/* Media query para celulares (até 768px) */
+@media (max-width: 768px) {
+    /* Logo bem grande */
+    .logo {
+        width: 400px; /* aumenta bastante */
+        margin-bottom: 25px;
+    }
+
+
+
+    
+}

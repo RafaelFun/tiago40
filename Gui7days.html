@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiago's birthday</title>
+    <link rel="stylesheet" href="DescricaoFesta.css">
+    <link rel="icon" type="image/jpg" href="./Imagens/LogoTiago40th.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<script>
+function mostrarInfo(tipo) {
+    const infoBox = document.getElementById('infoBox');
+    let conteudo = '';
+
+    switch(tipo) {
+        case 'trajes':
+            conteudo = `
+                <h2>DRESS CODE </h2>
+                <p><i>“O aprendizado maior como Produtor de Eventos é a habilidade de transformar uma ocasião em uma narrativa com temas,
+                     fantasias e recordações para o resto da vida. O dress code é uma parte essencial para criar algo único e memorável. 
+                     O black tie com Inspirações Tropicais foi a minha escolha para que todos os convidados possam elevar o seu lado criativo,
+                      sair da zona de conforto e transformar o ambiente em um momento único em uma noite de glamour no inverno tropical no Rio de Janeiro.”</i>
+                     <br> - <b>Tiago Mazzotti.</b> </p>
+                     <a href="Trajes.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'kit':
+            conteudo = `
+                <h2>Kit de Viagem</h2>
+                <p><i>“O Kit Viagem foi elaborado para que todos possam planejar sua viagem para o Rio de Janeiro de maneira eficaz e com descontos
+                     exclusivos para meus convidados. O hotel Fairmont Rio oferece o maior desconto por estar produzindo o evento principal do sábado, 
+                     dia 30 de maio. Uma seleção de hotéis quatro estrelas no bairro de Ipanema (próximo ao evento) também faz parte da nossa seleção 
+                     para um portfólio democrático.”</i><br> - <b>Tiago Mazzotti</b></p>
+                     <a href="KitViagem.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'rsvp':
+            conteudo = `
+                <h2>Confirmação de Presença</h2>
+                <p>Preencha o formulário abaixo para confirmar sua presença no evento.</p>
+                <a href="ConfirmarPresenca.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'calendario':
+            conteudo = `
+                <h2>FESTIVIDADES </h2>
+                <p><i>“O final de semana entre 29 de maio e 1 de junho está reservado para diversas festividades além da festa Black Tie no sábado à noite 
+                    no Fairmont Rio. Espero que todos tenham a oportunidade de participar em um encontro casual no Pão de Açúcar para iniciar as celebrações 
+                    na sexta feira à tarde e curar a ressaca com mimosas, bloody marys e drag queens no domingo para um divertido brunch.”</i><br>- <b>Tiago Mazzotti</b></p>
+                <a href="Calendario.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'seguranca':
+            conteudo = `
+                <h2>Dica para sua segurança e dos outros convidados </h2>
+                <p><i>"O Rio de Janeiro é a segunda cidade mais populosa do Brasil, conhecida por sua natureza deslumbrante, cultura vibrante e monumentos emblemáticos. É extremamente importante adaptar sua estratégia de viagem devido ao seu complexo contraste socioeconômico e aos limites seguros de seus bairros."</i><br>- <b>Tiago Mazzotti</b></p>
+                <a href="DicasSeguranca.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;    
+    }
+
+    infoBox.innerHTML = conteudo;
+    infoBox.style.display = 'block';
+}
+</script>
+
+    
+</head>
+<body>
+    <a href="./index.html"><img src="./Imagens/LogoTiagoTransparente.png" alt="Logo do Tiago 40th" class="logo"></a>
+
+    <div class="menu-container">
+        <a href="./FestDesc.html"><button class="menu-btn" onclick="mostrarInfo('DescFest')">MAIN SITE</button></a>
+        <button class="menu-btn" onclick="mostrarInfo('kit')">TRAVEL KIT</button>
+        <button class="menu-btn" onclick="mostrarInfo('rsvp')">RSVP</button>
+        <button class="menu-btn" onclick="mostrarInfo('calendario')">FESTIVITIES</button>
+        <button class="menu-btn" onclick="mostrarInfo('trajes')">DRESS CODE</button>
+        <button class="menu-btn" onclick="mostrarInfo('seguranca')">SAFETY TIPS</button>
+    </div>
+    <div id="infoBox" class="info-area"></div>
+    <div class="cabecalho">
+        <h1>MONDAY (MAY 25th)</h1>
+        <h2>Memorial Day nos EUA</h2>
+        <p>Arrive in Rio de Janeiro<br>
+            Relaxing Day by the pool or beach in Ipanema.</p>
+    </div>
+    <div class="cabecalho">
+        <h1>TUESDAY (MAY 26th)</h1>
+        <p> Explore the beach in Ipanema, the hotel pool, and the neighborhood.  Weekdays are way less crowded than weekends.  “Posto 8” (Lifeguard Tower 8) in Ipanema Beach is the main location for LGBTQ+ visitors. <br> 
+        Evening at Fame de Amoedo Street in Ipanema is also another LGBTQ+ international destination for casual bars and restaurants.</p>
+    </div>
+    <div class="cabecalho">
+        <h1>WEDNESDAY (MAY 27th)</h1>
+        <p><b>Christ the Redeemer Visit </b>(subject to weather conditions) This landmark is a “must" for anyone visiting Rio.<br>
+            The view is breathtaking and unforgettable. <br>
+            Tiago will be leading this activity.</p>
+    </div>
+    <div class="cabecalho">
+        <h1>THURSDAY (MAY 28th)</h1>
+        <p>Explore Leblon, Ipanema, Copacabana, and neighborhoods within the safe zone.<br>
+            It’s a perfect day for shopping, spa, and a late afternoon sunset in Ipanema. <br>
+            (must see the local ritual in Rio)</p>
+    </div>
+    <div class="cabecalho">
+        <h1>FRIDAY (MAY 29th)</h1>
+        <p>SEE FESTIVITIES OFFICIAL CALENDAR.</p>
+    </div>
+    <div class="cabecalho">
+        <h1>SATURDAY (MAY 30th)</h1>
+        <p>SEE FESTIVITIES OFFICIAL CALENDAR.</p>
+    </div>
+    <div class="cabecalho">
+        <h1>SUNDAY (JUNE 1st)</h1>
+        <p>SEE FESTIVITIES OFFICIAL CALENDAR.</p>
+    </div>
+    <div class="cabecalho">
+        <h1>MONDAY (JUNE 2nd)</h1>
+        <h2>Return Day</h2>
+            <p>Highly suggested that visitors from the United States return Monday or Tuesday after the festivities for cheaper airfare.</p>
+    </div>
+</p>
+    
+</body>
+</html>

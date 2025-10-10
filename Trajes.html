@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aniversario do Tiago</title>
+    <link rel="stylesheet" href="Trajes.css">
+    <link rel="icon" type="image/jpg" href="./Imagens/LogoTiago40th.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+function mostrarInfo(tipo) {
+    const infoBox = document.getElementById('infoBox');
+    let conteudo = '';
+
+    switch(tipo) {
+        case 'guia':
+            conteudo = `
+                <h2>7 SUGESTÃO ROTEIRO DE SETE DIAS NO RIO (Guia)</h2>
+                <p><i>“Este roteiro sugestivo de sete dias foi elaborado para visitantes de primeira viagem ou para aqueles que planejam uma estadia mais 
+                    longa antes das festividades do fim de semana. Recomendamos fortemente que os hóspedes internacionais que residem nos Estados Unidos 
+                    retornem para casa até segunda-feira, 2 de maio, para evitar os preços mais altos das passagens aéreas para a Copa do Mundo.”</i><br> - 
+                    <b>Tiago Mazzotti</b></p>
+                     <a href="./Guia7Dias.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'kit':
+            conteudo = `
+                <h2>Kit de Viagem</h2>
+                <p><i>“O Kit Viagem foi elaborado para que todos possam planejar sua viagem para o Rio de Janeiro de maneira eficaz e com descontos
+                     exclusivos para meus convidados. O hotel Fairmont Rio oferece o maior desconto por estar produzindo o evento principal do sábado, 
+                     dia 30 de maio. Uma seleção de hotéis quatro estrelas no bairro de Ipanema (próximo ao evento) também faz parte da nossa seleção 
+                     para um portfólio democrático.”</i><br> - <b>Tiago Mazzotti</b></p>
+                     <a href="KitViagem.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'rsvp':
+            conteudo = `
+                <h2>Confirmação de Presença</h2>
+                <p>Preencha o formulário abaixo para confirmar sua presença no evento.</p>
+                <a href="ConfirmarPresenca.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'calendario':
+            conteudo = `
+                <h2>FESTIVIDADES </h2>
+                <p><i>“O final de semana entre 29 de maio e 1 de junho está reservado para diversas festividades além da festa Black Tie no sábado à noite 
+                    no Fairmont Rio. Espero que todos tenham a oportunidade de participar em um encontro casual no Pão de Açúcar para iniciar as celebrações 
+                    na sexta feira à tarde e curar a ressaca com mimosas, bloody marys e drag queens no domingo para um divertido brunch.”</i><br>- <b>Tiago Mazzotti</b></p>
+                <a href="Calendario.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'seguranca':
+            conteudo = `
+                <h2>Dica para sua segurança e dos outros convidados </h2>
+                <p><i>"O Rio de Janeiro é a segunda cidade mais populosa do Brasil, conhecida por sua natureza deslumbrante, cultura vibrante e monumentos emblemáticos. É extremamente importante adaptar sua estratégia de viagem devido ao seu complexo contraste socioeconômico e aos limites seguros de seus bairros."</i><br>- <b>Tiago Mazzotti</b></p>
+                <a href="DicasSeguranca.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+    }
+
+    infoBox.innerHTML = conteudo;
+    infoBox.style.display = 'block';
+}
+</script>
+</head>
+<body>
+    <a href="./index.html"><img src="./Imagens/LogoTiagoTransparente.png" alt="Logo do Tiago 40th" class="logo"></a>
+    
+    <div class="menu-container">
+        <a href="./DescricaoFesta.html"><button class="menu-btn">SITE PRINCIPAL</button></a>
+        <button class="menu-btn" onclick="mostrarInfo('kit')">KIT DE VIAGEM</button>
+        <button class="menu-btn" onclick="mostrarInfo('rsvp')">RSVP</button>
+        <button class="menu-btn" onclick="mostrarInfo('calendario')">FESTIVIDADES</button>
+        <button class="menu-btn" onclick="mostrarInfo('seguranca')">DICAS DE SEGURANÇA</button>
+        <button class="menu-btn" onclick="mostrarInfo('guia')">7 DIAS NO RIO (GUIA)</button>
+    </div>
+<div id="infoBox" class="info-area"></div>
+    <div class="cabecalho">
+        <h1>CLIMA INVERNO TROPICAL</h1>
+        <p>As temperaturas durante o inverno tropical do Rio são quentes e agradáveis durante o dia e variam de 18°C a 23°C após o pôr do sol. Vale lembrar que o clima do inverno em zonas tropicais muda drasticamente com pouca previsão. A porcentagem de 
+    humidade é baixa e com poucos dias de chuva. Convidados internacionais podem comparar o clima com o inverno das cidades de Miami, Mallorca e Singapura. </p>
+        <h2>TROPICAL INSPIRATIONS </h2>
+        <p>As inspirações tropicais no formato black tie ajudam na adaptação deste famoso dress code para o clima do Rio de Janeiro e, acima de tudo, 
+            com muita criatividade. A tropicalidade oferece a oportunidade de tecidos leves com muitas cores e variedades infinitas de brilho e acessórios 
+            exagerados. Esta noite é o momento exato para trazer ideias ricas, exuberantes e com muita originalidade. Tecidos da cor preta e textura pesada 
+            devem ser evitados durante esta narrativa. </p>
+        <p>
+    </div>
+    <div class="Referencias">
+        <h1>BLACK TIE (MULHERES&nbsp;E&nbsp;NÃO-BINÁRIOS)</h1>
+        <p>Para trajes black-tie femininos, a tradição é um vestido de noite longo, embora um vestido de coquetel sofisticado abaixo dos joelhos em tecidos formais em tecidos formais 
+        como seda ou veludo também seja aceitável. Os acessórios devem ser refinados, incluindo joias sofisticadas e uma clutch formal para a noite, 
+        com saltos clássicos completando o visual. Alternativamente, um terninho elegante também pode ser apropriado para o black-tie, enfatizando a estética 
+        formal e atemporal. Acessórios originais, tecidos coloridos, estampas exclusivas e brilhos infinitos são bem-vindos e muito apreciados.</p> <br>
+
+    <b>Evitar</b>: Tecidos Pretos/ Vestidos Curtos/ Minisaias<br>
+    <b>Proibido</b>: Sapatos e Acessórios esportivos ou considerados esporte fino. <br><br>
+
+    <b>IMPORTANTE</b>: Step & Repeat estará presente na entrada do evento com luzes profissionais para uso de mídia fotográfica. Aconselhamos que maquiagens sejam executadas para alta definição e forte contraste de luz cenográfica. 
+</div>
+<div class="polariodFem"></div>
+    <div class="Referencias">
+        <h1>BLACK TIE (HOMENS&nbsp;E&nbsp;NÃO-BINÁRIOS)</h1>
+        <p>Para um black tie masculino, use um terno/blazer e calças combinados, uma camisa social e uma <b>gravata borboleta são fundamentais</b>. 
+            Os acessórios podem incluir abotoaduras e um lenço de bolso. Finalize o visual de sapatos sociais engraxados, de preferência de couro envernizado 
+            ou Oxfords. As inspirações tropicais são aplicadas em ternos coloridos, gravata borboletas originais e muita criatividade nos tecidos e texturas. 
+            O black tie para homens neste evento não segue a formalidade de casamento e formaturas. Não existem limitações de estilo para terno/blazer. 
+            Acessórios originais, tecidos coloridos, estampas exclusivas e brilhos infinitos são bem-vindos e muito apreciados. </p><br>
+        <b>Evitar</b>: Terno/ Blazer Preto e gravata social longa.<br> 
+        <b>Proibido</b>: Sapatos e Acessórios esportivos ou considerados esporte fino.<br><br>
+        <b>IMPORTANTE</b>: Step & Repeat estará presente na entrada do evento com luzes profissionais para uso de mídia fotográfica. Aconselhamos uma leve maquiagem masculina (corretivo e controle de brilho) que seja executada para alta definição e forte contraste de luz cenográfica.
+
+    </div>
+    <div class="polariodMasc"></div>
+    <div class="Referencias">
+        <h1>BLACK TIE (CRIANÇAS ATÉ 10 ANOS)</h1>
+        <p>O dress code black tie também deve ser aplicado para crianças de até 10 anos, porém sapatos esportivos são liberados para maior conforto.</p>
+    </div>
+
+</body>
+</html>

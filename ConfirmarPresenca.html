@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aniversario do Tiago</title>
+    <link rel="icon" type="image/jpg" href="./Imagens/LogoTiago40th.jpg">
+    <link rel="stylesheet" href="ConfirmarPresenca.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+function mostrarInfo(tipo) {
+    const infoBox = document.getElementById('infoBox');
+    let conteudo = '';
+
+    switch(tipo) {
+        case 'trajes':
+            conteudo = `
+                <h2>DRESS CODE </h2>
+                <p><i>“O aprendizado maior como Produtor de Eventos é a habilidade de transformar uma ocasião em uma narrativa com temas,
+                     fantasias e recordações para o resto da vida. O dress code é uma parte essencial para criar algo único e memorável. 
+                     O black tie com Inspirações Tropicais foi a minha escolha para que todos os convidados possam elevar o seu lado criativo,
+                      sair da zona de conforto e transformar o ambiente em um momento único em uma noite de glamour no inverno tropical no Rio de Janeiro.”</i>
+                     <br> - <b>Tiago Mazzotti.</b> </p>
+                     <a href="Trajes.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'kit':
+            conteudo = `
+                <h2>Kit de Viagem</h2>
+                <p><i>“O Kit Viagem foi elaborado para que todos possam planejar sua viagem para o Rio de Janeiro de maneira eficaz e com descontos
+                     exclusivos para meus convidados. O hotel Fairmont Rio oferece o maior desconto por estar produzindo o evento principal do sábado, 
+                     dia 30 de maio. Uma seleção de hotéis quatro estrelas no bairro de Ipanema (próximo ao evento) também faz parte da nossa seleção 
+                     para um portfólio democrático.”</i><br> - <b>Tiago Mazzotti</b></p>
+                     <a href="KitViagem.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'guia':
+            conteudo = `
+                <h2>7 SUGESTÃO ROTEIRO DE SETE DIAS NO RIO (Guia)</h2>
+                <p><i>“Este roteiro sugestivo de sete dias foi elaborado para visitantes de primeira viagem ou para aqueles que planejam uma estadia mais 
+                    longa antes das festividades do fim de semana. Recomendamos fortemente que os hóspedes internacionais que residem nos Estados Unidos 
+                    retornem para casa até segunda-feira, 2 de maio, para evitar os preços mais altos das passagens aéreas para a Copa do Mundo.”</i><br> - 
+                    <b>Tiago Mazzotti</b></p>
+                     <a href="./Guia7Dias.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'calendario':
+            conteudo = `
+                <h2>FESTIVIDADES </h2>
+                <p><i>“O final de semana entre 29 de maio e 1 de junho está reservado para diversas festividades além da festa Black Tie no sábado à noite 
+                    no Fairmont Rio. Espero que todos tenham a oportunidade de participar em um encontro casual no Pão de Açúcar para iniciar as celebrações 
+                    na sexta feira à tarde e curar a ressaca com mimosas, bloody marys e drag queens no domingo para um divertido brunch.”</i><br>- <b>Tiago Mazzotti</b></p>
+                <a href="Calendario.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'seguranca':
+            conteudo = `
+                <h2>Dica para sua segurança e dos outros convidados </h2>
+                <p><i>"O Rio de Janeiro é a segunda cidade mais populosa do Brasil, conhecida por sua natureza deslumbrante, cultura vibrante e monumentos emblemáticos. É extremamente importante adaptar sua estratégia de viagem devido ao seu complexo contraste socioeconômico e aos limites seguros de seus bairros."</i><br>- <b>Tiago Mazzotti</b></p>
+                <a href="DicasSeguranca.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;    
+    }
+
+    infoBox.innerHTML = conteudo;
+    infoBox.style.display = 'block';
+}
+</script>
+</head>
+<body>
+    <a href="./index.html"><img src="./Imagens/LogoTiagoTransparente.png" alt="Logo do Tiago 40th" class="logo"></a>
+    <div class="menu-container">
+        <a href="./DescricaoFesta.html"><button class="menu-btn">SITE PRINCIPAL</button></a>
+        <button class="menu-btn" onclick="mostrarInfo('kit')">KIT DE VIAGEM</button>
+        <button class="menu-btn" onclick="mostrarInfo('calendario')">FESTIVIDADES</button>
+        <button class="menu-btn" onclick="mostrarInfo('trajes')">DRESS CODE</button>
+        <button class="menu-btn" onclick="mostrarInfo('seguranca')">DICAS DE SEGURANÇA</button>
+        <button class="menu-btn" onclick="mostrarInfo('guia')">7 DIAS NO RIO (GUIA)</button>
+    </div>
+<div id="infoBox" class="info-area"></div>
+    <div class="formulario">
+        <form id="rsvp-form">
+            <h2>Selecione os dias de perticipação</h2>
+            <div class="dias-participacao">
+                <label><input type="checkbox" name="Sexta" value="sexta"> SEXTA-FEIRA (PÃO DE AÇÚCAR)</label><br>
+                <label><input type="checkbox" name="Sabado" value="sabado"> SÁBADO (EVENTO PRINCIPAL)</label><br>
+                <label><input type="checkbox" name="Domingo" value="domingo"> DOMINGO (BRUNCH)</label><br>
+            </div>
+
+            <h2>Faça seu Registro</h2>
+
+            <!-- Convidado principal (obrigatório) -->
+            <div class="participante">
+                <input type="text" name="nome1" placeholder="Nome 1" required>
+                <select name="idade1">
+                    <option value="">Selecione sua Idade</option>
+                    <option value="Adult or Teen">Adulto ou Adolecente</option>
+                    <option value="Children up to 10 years old">Crianças até 10 anos</option>
+                </select>
+            </div>
+
+            <!-- Acompanhantes (opcionais) -->
+            <div class="participante">
+                <input type="text" name="nome2" placeholder="Nome 2">
+                <select name="idade2">
+                    <option value="">Selecione sua Idade</option>
+                    <option value="Adult or Teen">Adulto ou Adolecente</option>
+                    <option value="Children up to 10 years old">Crianças até 10 anos</option>
+                </select>
+            </div>
+
+            <div class="participante">
+                <input type="text" name="nome3" placeholder="Nome 3">
+                <select name="idade3">
+                    <option value="">Selecione sua Idade</option>
+                    <option value="Adult or Teen">Adulto ou Adolecente</option>
+                    <option value="Children up to 10 years old">Crianças até 10 anos</option>
+                </select>
+            </div>
+
+            <div class="participante">
+                <input type="text" name="nome4" placeholder="Nome 4">
+                <select name="idade4">
+                    <option value="">Selecione sua Idade</option>
+                    <option value="Adult or Teen">Adulto ou Adolecente</option>
+                    <option value="Children up to 10 years old">Crianças até 10 anos</option>
+                </select>
+            </div>
+            <input type="email" name="email1" placeholder="Seu Email (Para Confirmalção)" class="email-principal">
+
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init('Ecz_yVzT39gBHt3WQ');
+
+        const form = document.getElementById('rsvp-form');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const guestEmail = form.email1.value;
+
+            // Enviar email para o organizador
+            emailjs.sendForm('service_r0dvru6', 'template_m0l40o5', form)
+                .then(() => {
+                    console.log('A sua informação foi enviada para o time do evento com sucesso! See you in Rio!');
+                }, (err) => {
+                    console.error('Erro ao enviar para organizador: ', err);
+                });
+
+            // Enviar confirmação para o convidado, apenas se email preenchido
+            if(guestEmail) {
+                const templateParams = {
+                    participant_name: form.nome1.value,
+                    to_email: guestEmail
+                };
+
+                emailjs.send('service_r0dvru6', 'template_nlwbl3r', templateParams)
+                    .then(() => {
+                        console.log('Confirmação enviada para o convidado!');
+                        alert('A sua informação foi enviada para o time do evento com sucesso! See you in Rio!');
+                        form.reset();
+                    }, (err) => {
+                        console.error('Erro ao enviar confirmação: ', err);
+                        alert('Erro ao enviar confirmação, tente novamente.');
+                    });
+            } else {
+                alert('A sua informação foi enviada para o time do evento com sucesso! See you in Rio!');
+                form.reset();
+            }
+        });
+    </script>
+
+</body>
+</html>

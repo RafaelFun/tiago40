@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aniversario do Tiago</title>
+    <link rel="stylesheet" href="DescricaoFesta.css">
+    <link rel="icon" type="image/jpg" href="./Imagens/LogoTiago40th.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<script>
+function mostrarInfo(tipo) {
+    const infoBox = document.getElementById('infoBox');
+    let conteudo = '';
+
+    switch(tipo) {
+        case 'guia':
+            conteudo = `
+                <h2>7 SUGESTÃO ROTEIRO DE SETE DIAS NO RIO (Guia)</h2>
+                <p><i>“Este roteiro sugestivo de sete dias foi elaborado para visitantes de primeira viagem ou para aqueles que planejam uma estadia mais 
+                    longa antes das festividades do fim de semana. Recomendamos fortemente que os hóspedes internacionais que residem nos Estados Unidos 
+                    retornem para casa até segunda-feira, 2 de maio, para evitar os preços mais altos das passagens aéreas para a Copa do Mundo.”</i><br> - 
+                    <b>Tiago Mazzotti</b></p>
+                     <a href="./Guia7Dias.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'trajes':
+            conteudo = `
+                <h2>DRESS CODE </h2>
+                <p><i>“O aprendizado maior como Produtor de Eventos é a habilidade de transformar uma ocasião em uma narrativa com temas,
+                     fantasias e recordações para o resto da vida. O dress code é uma parte essencial para criar algo único e memorável. 
+                     O black tie com Inspirações Tropicais foi a minha escolha para que todos os convidados possam elevar o seu lado criativo,
+                      sair da zona de conforto e transformar o ambiente em um momento único em uma noite de glamour no inverno tropical no Rio de Janeiro.”</i>
+                     <br> - <b>Tiago Mazzotti.</b> </p>
+                     <a href="Trajes.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'kit':
+            conteudo = `
+                <h2>Kit de Viagem</h2>
+                <p><i>“O Kit Viagem foi elaborado para que todos possam planejar sua viagem para o Rio de Janeiro de maneira eficaz e com descontos
+                     exclusivos para meus convidados. O hotel Fairmont Rio oferece o maior desconto por estar produzindo o evento principal do sábado, 
+                     dia 30 de maio. Uma seleção de hotéis quatro estrelas no bairro de Ipanema (próximo ao evento) também faz parte da nossa seleção 
+                     para um portfólio democrático.”</i><br> - <b>Tiago Mazzotti</b></p>
+                     <a href="KitViagem.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'rsvp':
+            conteudo = `
+                <h2>Confirmação de Presença</h2>
+                <p>Preencha o formulário abaixo para confirmar sua presença no evento.</p>
+                <a href="ConfirmarPresenca.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'calendario':
+            conteudo = `
+                <h2>FESTIVIDADES </h2>
+                <p><i>“O final de semana entre 29 de maio e 1 de junho está reservado para diversas festividades além da festa Black Tie no sábado à noite 
+                    no Fairmont Rio. Espero que todos tenham a oportunidade de participar em um encontro casual no Pão de Açúcar para iniciar as celebrações 
+                    na sexta feira à tarde e curar a ressaca com mimosas, bloody marys e drag queens no domingo para um divertido brunch.”</i><br>- <b>Tiago Mazzotti</b></p>
+                <a href="Calendario.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'seguranca':
+            conteudo = `
+                <h2>Dica para sua segurança e dos outros convidados </h2>
+                <p><i>"O Rio de Janeiro é a segunda cidade mais populosa do Brasil, conhecida por sua natureza deslumbrante, cultura vibrante e monumentos emblemáticos. É extremamente importante adaptar sua estratégia de viagem devido ao seu complexo contraste socioeconômico e aos limites seguros de seus bairros."</i><br>- <b>Tiago Mazzotti</b></p>
+                <a href="DicasSeguranca.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;    
+    }
+
+    infoBox.innerHTML = conteudo;
+    infoBox.style.display = 'block';
+}
+</script>
+
+    
+</head>
+<body>
+    
+    <a href="./index.html"><img src="./Imagens/LogoTiagoTransparente.png" alt="Logo do Tiago 40th" class="logo"></a>
+
+    <div class="menu-container">
+        <button class="menu-btn" onclick="mostrarInfo('kit')">KIT DE VIAGEM</button>
+        <button class="menu-btn" onclick="mostrarInfo('rsvp')">CONFIRMAR PRESENÇA</button>
+        <button class="menu-btn" onclick="mostrarInfo('calendario')">FESTIVIDADES</button>
+        <button class="menu-btn" onclick="mostrarInfo('trajes')">DRESS CODE</button>
+        <button class="menu-btn" onclick="mostrarInfo('seguranca')">DICAS DE SEGURANÇA</button>
+        <button class="menu-btn" onclick="mostrarInfo('guia')">7 DIAS NO RIO (GUIA)</button>
+    </div>
+<div id="infoBox" class="info-area"></div>
+
+
+    <div class="cabecalho">
+        <h2>Bem-vindo à Celebração de 40 Anos do Tiago Mazzotti!</h2>
+        <p><i>“Este site foi criado para que todos os convidados ao redor do mundo tenham acesso a todas as informações necessárias para um planejamento de viagem
+             eficaz e seguro durante as minhas celebrações de 40 anos de vida na cidade maravilhosa do Rio de Janeiro! Não importa se você deseja planejar apenas
+              um final de semana ou uma semana inteira - tudo foi elaborado com muito carinho para uma grande homenagem ao meu país de origem e a todos que fazem 
+              parte da minha história até hoje. Não esqueçam de confirmar presença no RSVP! See you in Rio!”</i> - Tiago Mazzotti. 
+</p> 
+    </div>
+    <div class="SobreRio">
+        <h2>SOBRE O RIO </h2>
+        <p>A cidade do Rio de Janeiro foi escolhida para esta celebração por ser o nosso cartão postal internacional do Brasil.
+             Muitos de nossos convidados irão ter o privilégio de experimentar o nosso país pela primeira vez. 
+             O Rio é a cidade que mais exporta a diversidade brasileira com destaques em sua beleza natural, música, culinária, 
+             cultura e popularidade desde dos famosos filmes de Hollywood até atrações internacionais atraindo milhares de espectadores 
+             para a praia de Copacabana…a demanda para o Rio atingiu algo inédito em 2024 e 2025 com o maior número de visitantes estrangeiros 
+             já registrados na história da cidade. Nós estamos cientes dos desafios de segurança que o Brasil enfrenta nas últimas décadas e tudo 
+             será planejado para que nossa experiência seja a mais positiva possível com um complexo plano de segurança e conforto para todos os convidados.</p>
+    </div>
+
+
+
+
+
+
+</body>
+</html>

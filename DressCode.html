@@ -1,0 +1,130 @@
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiago's birthday</title>
+    <link rel="stylesheet" href="DressCode.css">
+    <link rel="icon" type="image/jpg" href="./Imagens/LogoTiago40th.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+    function mostrarInfo(tipo) {
+        const infoBox = document.getElementById('infoBox');
+        let conteudo = '';
+
+        switch(tipo) {
+            case 'guia':
+                conteudo = `
+                    <h2>SUGGESTED SEVEN-DAY RIO ITINERARY</h2>
+                    <p><i>"This suggestive seven-day itinerary is designed for first-time visitors or those planning a longer stay before the weekend festivities. We highly suggest international guests located in the United States return back home no later than Monday, May 2nd, to  avoid World Cup higher air ticket prices. "</i><br> - 
+                        <b>Tiago Mazzotti</b></p>
+                         <a href="./Gui7days.html">
+                            <button class="menu-btn" style="margin-top: 10px;">See more details</button>
+                        </a>
+                `;
+                break;
+            case 'kit':
+                conteudo = `
+                    <h2>TRAVEL KIT</h2>
+                    <p>"The Travel Kit was designed to help everyone plan their trip to Rio de Janeiro effectively, 
+                        with exclusive discounts for my guests. The Fairmont Rio hotel offers the biggest discount because 
+                        it’s producing the main event on Saturday, May 30th. A selection of four-star hotels in the Ipanema neighborhood 
+                        (near the event) is also part of our selection for a democratic portfolio.”<br> - <b>Tiago Mazzotti</b></p>
+                        <a href="KitTraveler.html">
+                            <button class="menu-btn" style="margin-top: 10px;">See more details</button>
+                        </a>
+                `;
+                break;
+            case 'rsvp':
+                conteudo = `
+                    <h2>Confirmation of Attendance</h2>
+                    <p>Please fill out the form below to confirm your attendance at the event.</p>
+                    <a href="rsvp.html">
+                            <button class="menu-btn" style="margin-top: 10px;">See more details</button>
+                        </a>
+                `;
+                break;
+            case 'calendario':
+                conteudo = `
+                    <h2>FESTIVITIES</h2>
+                    <p>"The weekend between May 29th and June 1st is packed with festivities beyond the Saturday night Black Tie party at the Fairmont Rio. 
+                        I hope everyone has the opportunity to join us for a casual gathering at Sugarloaf Mountain to kick off the celebrations on Friday 
+                        afternoon and cure their hangovers with mimosas, bloody marys, and drag queens for a fun brunch on Sunday."<br>- <b>Tiago Mazzotti</b></p>
+                    <a href="Calendar.html">
+                            <button class="menu-btn" style="margin-top: 10px;">See more details</button>
+                        </a>
+                `;
+                break;
+            case 'seguranca':
+            conteudo = `
+                <h2>Tip for your safety and that of other guests</h2>
+                <p><i>Rio de Janeiro is the second-most-populous city in Brazil, known for its stunning natural setting, vibrant culture and iconic landmarks. It’s extremely important to adapt your travel awareness due to its complex socio-economic contrast and safe district boundaries.</i><br>- <b>Tiago Mazzotti</b></p>
+                <a href="Safety.html">
+                        <button class="menu-btn" style="margin-top: 10px;">See more details</button>
+                    </a>
+            `;
+            break;
+        }
+
+        infoBox.innerHTML = conteudo;
+        infoBox.style.display = 'block';
+    }
+    </script>
+</head>
+<body>
+    <a href="./index.html"><img src="./Imagens/LogoTiagoTransparente.png" alt="Logo do Tiago 40th" class="logo"></a>
+    <div class="menu-container">
+        <a href="./FestDesc.html"><button class="menu-btn" onclick="mostrarInfo('DescFest')">MAIN SITE</button></a>
+        <button class="menu-btn" onclick="mostrarInfo('kit')">TRAVEL KIT</button>
+        <button class="menu-btn" onclick="mostrarInfo('rsvp')">RSVP</button>
+        <button class="menu-btn" onclick="mostrarInfo('calendario')">FESTIVITIES</button>
+        <button class="menu-btn" onclick="mostrarInfo('seguranca')">SAFETY TIPS</button>
+        <button class="menu-btn" onclick="mostrarInfo('guia')">7 DAYS IN RIO (GUIDE)</button>
+    </div>
+    <div id="infoBox" class="info-area"></div>
+    <div class="cabecalho">
+        <h1>TROPICAL WINTER</h1>
+        <p>Temperatures during Rio's tropical winter are warm and pleasant during the day and range from 64°F ​​to 73°F after sunset. 
+            It's worth remembering that winter weather in tropical areas changes dramatically with little forecast. Humidity levels are low, 
+            with few rainy days. International guests can compare the climate to winter in Miami, Mallorca, and Singapore.</p>
+        <h2>TROPICAL INSPIRATIONS </h2>
+        <p>Tropical inspirations in black tie format help adapt this famous dress code to the climate of Rio de Janeiro and, 
+            above all, with plenty of creativity. TROPICALITY offers the opportunity for light fabrics in many colors and endless varieties of 
+            shiny and exaggerated accessories. Tonight is the perfect time to bring out rich, exuberant, and highly original ideas. 
+            Black and heavy-textured fabrics should be avoided during this style.</p>
+        <p>
+    </div>
+    <div class="Referencias">
+        <h1>BLACK TIE (WOMEN&nbsp;AND&nbsp;NON-BINARY)</h1>
+        <p>
+        For women's black-tie attire, the tradition is a long evening gown, although a <!-- mudar -->sophisticated cocktail dress below the knees in 
+        formal fabrics such as silk or velvet is also acceptable. Accessories should be refined, including sophisticated jewelry and a formal evening clutch, 
+        with classic heels completing the look. Alternatively, an elegant pantsuit can also be appropriate for black-tie, emphasizing the formal and timeless 
+        aesthetic. Original accessories, colorful patterns, unique prints and endless sparkles are welcome and highly appreciated.</p>
+
+    <b>Avoid</b>: Black fabric, short skirts, short dresses and miniskirts. <br>
+    <b>Prohibited</b>: sporty shoes and accessories.<br><br>
+
+    <b>IMPORTANT</b>: Step & Repeat will be present at the event entrance with professional lighting for photographic use. We recommend applying makeup for high definition and strong contrast of stage lighting. 
+</div>
+<div class="polariodFem"></div>
+    <div class="Referencias">
+        <h1>BLACK TIE (MEN&nbsp;AND&nbsp;NON-BINARY)</h1>
+        <p>For a men's black tie, wear a matching suit/blazer and pants; a dress shirt and bow tie are essential. 
+            Accessories can include cufflinks and a pocket square. Finish the look with polished dress shoes, preferably patent leather or Oxfords. 
+            Tropical inspirations are applied to colorful suits, original bow ties, and plenty of creativity with fabrics and textures. Black tie for 
+            men at this event doesn't follow the formality of weddings and graduations. There are no style limitations for suits/blazers. 
+            Original accessories, colorful patterns, unique prints and endless sparkles are welcome and highly appreciated.</p>
+        <b>Avoid</b>: Black suit/blazer and formal long tie. <br> 
+        <b>Prohibited</b>: Sports shoes and accessories, or those considered smart casual.<br><br>
+        <b>IMPORTANT</b>: Step & Repeat will be present at the event entrance with professional lighting for photographic use. We recommend light male makeup (concealer and shine control) for high definition and strong contrast in the stage lighting.
+
+    </div>
+    <div class="polariodMasc"></div>
+    <div class="Referencias">
+        <h1>BLACK TIE (CHILDREN UP TO 10 YEARS OLD)</h1>
+        <p>The black tie dress code must also apply to children up to 10 years old, but sports shoes are permitted for greater comfort.</p>
+    </div>
+
+</body>
+</html>
