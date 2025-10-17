@@ -17,59 +17,59 @@ function mostrarInfo(tipo) {
 
     switch(tipo) {
         case 'trajes':
-            conteudo = `
-                <h2>DRESS CODE </h2>
-                <p><i>“O aprendizado maior como Produtor de Eventos é a habilidade de transformar uma ocasião em uma narrativa com temas,
-                     fantasias e recordações para o resto da vida. O dress code é uma parte essencial para criar algo único e memorável. 
-                     O black tie com Inspirações Tropicais foi a minha escolha para que todos os convidados possam elevar o seu lado criativo,
-                      sair da zona de conforto e transformar o ambiente em um momento único em uma noite de glamour no inverno tropical no Rio de Janeiro.”</i>
-                     <br> - <b>Tiago Mazzotti.</b> </p>
-                     <a href="Trajes.html">
-                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
-                    </a>
-            `;
-            break;
+                conteudo = `
+                    <h2>DRESS CODE </h2>
+                    <p>“"The greatest lesson learned as an Event Producer is the ability to transform an occasion into a narrative with themes, 
+                        costumes, and lifelong memories. The dress code is an essential part of creating something unique and exclusive. 
+                        Black tie with Tropical Inspirations was my choice so that all guests could elevate their creative side, step out of their 
+                        comfort zone, and transform the atmosphere into a unique moment on a glamorous night in the tropical winter in Rio de Janeiro."
+                        <br> - <b>Tiago Mazzotti.</b> </p>
+                        <a href="DressCode.html">
+                            <button class="menu-btn" style="margin-top: 10px;">See more details</button>
+                        </a>
+                `;
+                break;
         case 'kit':
-            conteudo = `
-                <h2>Kit de Viagem</h2>
-                <p><i>“O Kit Viagem foi elaborado para que todos possam planejar sua viagem para o Rio de Janeiro de maneira eficaz e com descontos
-                     exclusivos para meus convidados. O hotel Fairmont Rio oferece o maior desconto por estar produzindo o evento principal do sábado, 
-                     dia 30 de maio. Uma seleção de hotéis quatro estrelas no bairro de Ipanema (próximo ao evento) também faz parte da nossa seleção 
-                     para um portfólio democrático.”</i><br> - <b>Tiago Mazzotti</b></p>
-                     <a href="KitViagem.html">
-                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
-                    </a>
-            `;
-            break;
+                conteudo = `
+                    <h2>TRAVEL KIT</h2>
+                    <p>"The Travel Kit was designed to help everyone plan their trip to Rio de Janeiro effectively, 
+                        with exclusive discounts for my guests. The Fairmont Rio hotel offers the biggest discount because 
+                        it’s producing the main event on Saturday, May 30th. A selection of four-star hotels in the Ipanema neighborhood 
+                        (near the event) is also part of our selection for a democratic portfolio.”<br> - <b>Tiago Mazzotti</b></p>
+                        <a href="KitTraveler.html">
+                            <button class="menu-btn" style="margin-top: 10px;">See more details</button>
+                        </a>
+                `;
+                break;
         case 'rsvp':
-            conteudo = `
-                <h2>Confirmação de Presença</h2>
-                <p>Preencha o formulário abaixo para confirmar sua presença no evento.</p>
-                <a href="ConfirmarPresenca.html">
-                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
-                    </a>
-            `;
-            break;
+                conteudo = `
+                    <h2>Confirmation of Attendance</h2>
+                    <p>Please fill out the form below to confirm your attendance at the event.</p>
+                    <a href="rsvp.html">
+                            <button class="menu-btn" style="margin-top: 10px;">See more details</button>
+                        </a>
+                `;
+                break;
         case 'calendario':
-            conteudo = `
-                <h2>FESTIVIDADES </h2>
-                <p><i>“O final de semana entre 29 de maio e 1 de junho está reservado para diversas festividades além da festa Black Tie no sábado à noite 
-                    no Fairmont Rio. Espero que todos tenham a oportunidade de participar em um encontro casual no Pão de Açúcar para iniciar as celebrações 
-                    na sexta feira à tarde e curar a ressaca com mimosas, bloody marys e drag queens no domingo para um divertido brunch.”</i><br>- <b>Tiago Mazzotti</b></p>
-                <a href="Calendario.html">
-                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
-                    </a>
-            `;
-            break;
+                conteudo = `
+                    <h2>FESTIVITIES</h2>
+                    <p>"The weekend between May 29th and May 31th is packed with festivities beyond the Saturday night Black Tie party at the Fairmont Rio. 
+                        I hope everyone has the opportunity to join us for a casual gathering at Sugarloaf Mountain to kick off the celebrations on Friday 
+                        afternoon and cure their hangovers with mimosas, bloody marys, and drag queens for a fun brunch on Sunday."<br>- <b>Tiago Mazzotti</b></p>
+                    <a href="Calendar.html">
+                            <button class="menu-btn" style="margin-top: 10px;">See more details</button>
+                        </a>
+                `;
+                break;
         case 'seguranca':
             conteudo = `
-                <h2>Dica para sua segurança e dos outros convidados </h2>
-                <p><i>"O Rio de Janeiro é a segunda cidade mais populosa do Brasil, conhecida por sua natureza deslumbrante, cultura vibrante e monumentos emblemáticos. É extremamente importante adaptar sua estratégia de viagem devido ao seu complexo contraste socioeconômico e aos limites seguros de seus bairros."</i><br>- <b>Tiago Mazzotti</b></p>
-                <a href="DicasSeguranca.html">
-                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                <h2>Tip for your safety and that of other guests</h2>
+                <p><i>Rio de Janeiro is the second-most-populous city in Brazil, known for its stunning natural setting, vibrant culture and iconic landmarks. It’s extremely important to adapt your travel awareness due to its complex socio-economic contrast and safe district boundaries.</i><br>- <b>Tiago Mazzotti</b></p>
+                <a href="Safety.html">
+                        <button class="menu-btn" style="margin-top: 10px;">See more details</button>
                     </a>
             `;
-            break;    
+            break;   
     }
 
     infoBox.innerHTML = conteudo;
