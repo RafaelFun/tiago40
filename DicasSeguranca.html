@@ -29,7 +29,7 @@ function mostrarInfo(tipo) {
             break;
         case 'kit':
             conteudo = `
-                <h2>KIT VIAGEM - HOTEIS & DISCOUNTS</h2>
+                <h2>KIT VIAGEM - HOTÉIS & DESCONTOS</h2>
                 <p><i>“O Kit Viagem foi elaborado para que todos possam planejar sua viagem para o Rio de Janeiro de maneira eficaz e com descontos 
                     exclusivos para meus convidados. O hotel Fairmont Rio oferece o maior desconto por produzir o evento principal do sábado, 30 de maio. 
                     Uma seleção de hotéis quatro estrelas em Ipanema, bairro próximo ao evento, também faz parte da nossa seleção para opções democráticas.”</i>.”</i><br> - <b>Tiago Mazzotti</b></p>
@@ -40,7 +40,7 @@ function mostrarInfo(tipo) {
             break;
         case 'rsvp':
             conteudo = `
-                <h2>Confirmação de Presença</h2>
+                <h2>CONFIRMAÇÃO DE PRESENÇA</h2>
                 <p>Preencha o formulário abaixo para confirmar sua presença no evento.</p>
                 <a href="ConfirmarPresenca.html">
                         <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
@@ -49,7 +49,7 @@ function mostrarInfo(tipo) {
             break;
         case 'calendario':
             conteudo = `
-                <h2>DATA DOS EVENTOS</h2>
+                <h2>PROGRAMAÇÃO (DATAS E HORÁRIOS)</h2>
                 <p><i>“O final de semana entre os dias 29 e 31 de maio está reservado para diversas festividades além da festa Black Tie no 
                     sábado à noite no Fairmont Rio. Espero que todos tenham a oportunidade de participar de um encontro casual no Pão de Açúcar para 
                     iniciar as celebrações na sexta-feira à tarde e curar a ressaca com mimosas, bloody marys e drag queens no 
@@ -85,9 +85,9 @@ function mostrarInfo(tipo) {
 
     <div class="menu-container">
         <a href="./DescricaoFesta.html"><button class="menu-btn">SITE PRINCIPAL</button></a>
-        <button class="menu-btn" onclick="mostrarInfo('kit')">KIT VIAGEM - HOTEIS & DISCOUNTS</button>
+        <button class="menu-btn" onclick="mostrarInfo('kit')">KIT VIAGEM - HOTÉIS & DESCONTOS</button>
         <button class="menu-btn" onclick="mostrarInfo('rsvp')">CONFIRMAR PRESENÇA</button>
-        <button class="menu-btn" onclick="mostrarInfo('calendario')">DATA DOS EVENTOS</button>
+        <button class="menu-btn" onclick="mostrarInfo('calendario')">PROGRAMAÇÃO (DATAS E HORÁRIOS)</button>
         <button class="menu-btn" onclick="mostrarInfo('trajes')">DRESS CODE</button>
         <button class="menu-btn" onclick="mostrarInfo('guia')">7 DIAS NO RIO (GUIA)</button>
     </div>

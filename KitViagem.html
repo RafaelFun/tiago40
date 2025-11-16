@@ -40,7 +40,7 @@ function mostrarInfo(tipo) {
             break;
         case 'rsvp':
             conteudo = `
-                <h2>Confirmação de Presença</h2>
+                <h2>CONFIRMAÇÃO DE PRESENÇA</h2>
                 <p>Preencha o formulário abaixo para confirmar sua presença no evento.</p>
                 <a href="ConfirmarPresenca.html">
                         <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
@@ -49,7 +49,7 @@ function mostrarInfo(tipo) {
             break;
         case 'calendario':
             conteudo = `
-                <h2>DATA DOS EVENTOS</h2>
+                <h2>PROGRAMAÇÃO (DATAS E HORÁRIOS)</h2>
                 <p><i>“O final de semana entre os dias 29 e 31 de maio está reservado para diversas festividades além da festa Black Tie no 
                     sábado à noite no Fairmont Rio. Espero que todos tenham a oportunidade de participar de um encontro casual no Pão de Açúcar para 
                     iniciar as celebrações na sexta-feira à tarde e curar a ressaca com mimosas, bloody marys e drag queens no 
@@ -61,7 +61,7 @@ function mostrarInfo(tipo) {
             break;
         case 'seguranca':
             conteudo = `
-                <h2>Dica para sua segurança e dos outros convidados </h2>
+                <h2>DICA PARA SUA SEGURANÇA E DOS OUTROS CONVIDADOS</h2>
                 <p><i>"O Rio de Janeiro é a segunda cidade mais populosa do Brasil, conhecida por sua natureza deslumbrante, cultura vibrante e monumentos emblemáticos. É extremamente importante adaptar sua estratégia de viagem devido ao seu complexo contraste socioeconômico e aos limites seguros de seus bairros."</i><br>- <b>Tiago Mazzotti</b></p>
                 <a href="DicasSeguranca.html">
                         <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
@@ -80,7 +80,7 @@ function mostrarInfo(tipo) {
     <div class="menu-container">
         <a href="./DescricaoFesta.html"><button class="menu-btn">SITE PRINCIPAL</button></a>
         <button class="menu-btn" onclick="mostrarInfo('rsvp')">CONFIRMAR PRESENÇA</button>
-        <button class="menu-btn" onclick="mostrarInfo('calendario')">DATA DOS EVENTOS</button>
+        <button class="menu-btn" onclick="mostrarInfo('calendario')">PROGRAMAÇÃO (DATAS E HORÁRIOS)</button>
         <button class="menu-btn" onclick="mostrarInfo('trajes')">DRESS CODE</button>
         <button class="menu-btn" onclick="mostrarInfo('seguranca')">DICAS DE SEGURANÇA</button>
         <button class="menu-btn" onclick="mostrarInfo('guia')">7 DIAS NO RIO (GUIA)</button>
