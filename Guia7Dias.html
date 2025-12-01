@@ -70,6 +70,15 @@ function mostrarInfo(tipo) {
                     </a>
             `;
             break;    
+        case 'cabelo':
+            conteudo = `
+                <h2>LISTA DE PROFICIONAIS PARA CABELO E MAKE UP</h2>
+                <p><i>Lista de profissionais para cabelo e make up estarão disponíveis neste site para consulta e agendamento após dia 15 de Março de 2026</i><br></p>
+                <a href="Cabelo_Maquiagem.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
     }
 
     infoBox.innerHTML = conteudo;
@@ -89,6 +98,7 @@ function mostrarInfo(tipo) {
         <button class="menu-btn" onclick="mostrarInfo('calendario')">PROGRAMAÇÃO (DATAS E HORÁRIOS)</button>
         <button class="menu-btn" onclick="mostrarInfo('trajes')">DRESS CODE</button>
         <button class="menu-btn" onclick="mostrarInfo('seguranca')">DICAS DE SEGURANÇA</button>
+        <button class="menu-btn" onclick="mostrarInfo('cabelo')">GLAM TEAM (CABELO & MAKE-UP)</button>
     </div>
     <div id="infoBox" class="info-area"></div>
     <div class="cabecalho">
