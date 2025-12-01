@@ -67,6 +67,15 @@
                     </a>
             `;
             break;
+            case 'cabelo':
+            conteudo = `
+                <h2>LIST OF HAIR & MAKEUP PROFESSIONALS</h2>
+                <p>A list of hair and makeup professionals will be available on this website for consultation and scheduling after March 15, 2026.</p>
+                <a href="GlamTeam.html">
+                        <button class="menu-btn" style="margin-top: 10px;">See more details</button>
+                    </a>
+            `;
+            break;
         }
 
         infoBox.innerHTML = conteudo;
@@ -85,6 +94,7 @@
         <button class="menu-btn" onclick="mostrarInfo('trajes')">DRESS CODE</button>
         <button class="menu-btn" onclick="mostrarInfo('seguranca')">SAFETY TIPS</button>
         <button class="menu-btn" onclick="mostrarInfo('guia')">7 DAYS IN RIO (GUIDE)</button>
+        <button class="menu-btn" onclick="mostrarInfo('cabelo')">GLAM TEAM</button>
     </div>
 
     <div id="infoBox" class="info-area"></div>

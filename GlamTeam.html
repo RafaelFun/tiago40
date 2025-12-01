@@ -1,19 +1,21 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+
+<!doctype html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Tiago's birthday</title>
-    <link rel="stylesheet" href="FestDesc.css">
+    <title>Aniversario do Tiago</title>
+    <link rel="stylesheet" href="DescricaoFesta.css">
     <link rel="icon" type="image/jpg" href="./Imagens/LogoTiago40th.jpg">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script>
-    function mostrarInfo(tipo) {
-        const infoBox = document.getElementById('infoBox');
-        let conteudo = '';
 
-        switch(tipo) {
-            case 'guia':
+<script>
+function mostrarInfo(tipo) {
+    const infoBox = document.getElementById('infoBox');
+    let conteudo = '';
+
+    switch(tipo) {
+        case 'guia':
                 conteudo = `
                     <h2>SUGGESTED SEVEN-DAY RIO ITINERARY</h2>
                     <p><i>"This suggestive seven-day itinerary is designed for first-time visitors or those planning a longer stay before the weekend festivities. We highly suggest international guests located in the United States return back home no later than Monday, May 2nd, to  avoid World Cup higher air ticket prices. "</i><br> - 
@@ -76,61 +78,32 @@
                         <button class="menu-btn" style="margin-top: 10px;">See more details</button>
                     </a>
             `;
-            break;
-            case 'cabelo':
-            conteudo = `
-                <h2>LIST OF HAIR & MAKEUP PROFESSIONALS</h2>
-                <p>A list of hair and makeup professionals will be available on this website for consultation and scheduling after March 15, 2026.</p>
-                <a href="GlamTeam.html">
-                        <button class="menu-btn" style="margin-top: 10px;">See more details</button>
-                    </a>
-            `;
-            break;
-        }
-
-        infoBox.innerHTML = conteudo;
-        infoBox.style.display = 'block';
+            break; 
     }
-    </script>
+
+    infoBox.innerHTML = conteudo;
+    infoBox.style.display = 'block';
+}
+</script>
 
     
 </head>
 <body>
+
     <a href="./index.html"><img src="./Imagens/LogoTiagoTransparente.png" alt="Logo do Tiago 40th" class="logo"></a>
     <div class="menu-container">
+        <a href="./FestDesc.html"><button class="menu-btn" onclick="mostrarInfo('DescFest')">MAIN SITE</button></a>
         <button class="menu-btn" onclick="mostrarInfo('kit')">TRAVEL KIT - HOTELS & DISCOUNTS</button>
         <button class="menu-btn" onclick="mostrarInfo('rsvp')">RSVP</button>
         <button class="menu-btn" onclick="mostrarInfo('calendario')">EVENT DATES</button>
         <button class="menu-btn" onclick="mostrarInfo('trajes')">DRESS CODE</button>
         <button class="menu-btn" onclick="mostrarInfo('seguranca')">SAFETY TIPS</button>
         <button class="menu-btn" onclick="mostrarInfo('guia')">7 DAYS IN RIO (GUIDE)</button>
-        <button class="menu-btn" onclick="mostrarInfo('cabelo')">GLAM TEAM</button>
     </div>
 
     <div id="infoBox" class="info-area"></div>
-
-
-    <div class="cabecalho">
-        <h2>Welcome to Tiago Mazzotti's 40th Birthday Celebration in Rio!</h2>
-        <p>"This website was created to give guests from around the world access to all the important information needed for an 
-            effective and safe travel planning during my 40th Birthday Celebrations in the wonderful city of Rio de Janeiro! Whether you 
-            want to plan just a weekend or a whole week, everything has been lovingly crafted for a grand welcome to my home country and to 
-            everyone who has been part of my story. Don't forget to RSVP! See you in Rio!" - Tiago Mazzotti. 
-</p> 
-    </div>
-    <div class="SobreRio">
-        <h2>ABOUT RIO</h2>
-        <p>The city of Rio de Janeiro was chosen for this celebration because it has been Brazil’s most popular destination for centuries. 
-            Many of our guests will have the privilege of experiencing Brazil for the first time. Rio represents Brazilian diversity, featuring 
-            natural beauty, music, cuisine, culture, and global recognition through famous Hollywood films and international attractions. 
-            It draws thousands of spectators to Copacabana Beach each year. Demand for Rio reached unprecedented levels in 2024 and 2025, with the city 
-            recording its highest-ever number of foreign visitors. We acknowledge the security challenges Brazil has faced in recent decades, and we have 
-            planned everything to ensure a positive experience, including a comprehensive security and comfort plan for all guests.
-</p>
-    </div>
-    <!-- MENU -->
-
-
-
+<div class="cabecalho">
+    <h3>A list of hair and makeup professionals will be available on this website for consultation and scheduling after March 15, 2026.</h3>
+</div>
 </body>
 </html>
