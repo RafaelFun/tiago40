@@ -16,6 +16,17 @@ function mostrarInfo(tipo) {
     let conteudo = '';
 
     switch(tipo) {
+        case 'gifts':
+                conteudo = `
+                    <h2>PRESENTES & CARTÕES</h2>
+                    <p>O aniversariante agradece imensamente o carinho dos convidados que desejarem presenteá-lo durante as festividades; 
+                        no entanto, a entrega de qualquer artigo de valor não será permitida. No mês de abril, Tiago anunciará uma ONG, e os convidados 
+                        terão a oportunidade de realizar doações diretamente ao projeto como alternativa. Cartões de aniversário serão sempre muito bem-vindos e apreciados.<br></p>
+                        <a href="SugestaoPresente.html">
+                            <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                        </a>
+                `;
+                break;
         case 'trajes':
             conteudo = `
                 <h2>DRESS CODE </h2>
