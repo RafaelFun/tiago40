@@ -15,6 +15,17 @@ function mostrarInfo(tipo) {
     let conteudo = '';
 
     switch(tipo) {
+        case 'gifts':
+                conteudo = `
+                    <h2> GIFTS & BIRTHDAY CARDS</h2>
+                    <p>Tiago sincerely appreciates the thoughtfulness of guests who wish to give a gift during the celebrations; however, 
+                        the delivery of any items of value will not be permitted. In April, Tiago will announce a nonprofit organization, 
+                        and guests will have the opportunity to make direct donations to the selected cause as an alternative. Birthday cards are always welcome and truly appreciated.<br></p>
+                        <a href="GiftSuggestions.html">
+                            <button class="menu-btn" style="margin-top: 10px;">See more details</button>
+                        </a>
+                `;
+                break;
         case 'guia':
                 conteudo = `
                     <h2>SUGGESTED SEVEN-DAY RIO ITINERARY</h2>
@@ -100,6 +111,7 @@ function mostrarInfo(tipo) {
         <button class="menu-btn" onclick="mostrarInfo('trajes')">DRESS CODE</button>
         <button class="menu-btn" onclick="mostrarInfo('seguranca')">SAFETY TIPS</button>
         <button class="menu-btn" onclick="mostrarInfo('guia')">7 DAYS IN RIO (GUIDE)</button>
+        <button class="menu-btn" onclick="mostrarInfo('gifts')">GIFTS & BIRTHDAY CARDS</button>
     </div>
 
     <div id="infoBox" class="info-area"></div>
