@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aniversario do Tiago</title>
+    <link rel="stylesheet" href="Trajes.css">
+    <link rel="icon" type="image/jpg" href="./Imagens/LogoTiago40th.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+function mostrarInfo(tipo) {
+    const infoBox = document.getElementById('infoBox');
+    let conteudo = '';
+
+    switch(tipo) {
+        case 'gifts':
+                conteudo = `
+                    <h2>PRESENTES & CARTÕES</h2>
+                    <p>O aniversariante agradece imensamente o carinho dos convidados que desejarem presenteá-lo durante as festividades; 
+                        no entanto, a entrega de qualquer artigo de valor não será permitida. No mês de abril, Tiago anunciará uma ONG, e os convidados 
+                        terão a oportunidade de realizar doações diretamente ao projeto como alternativa. Cartões de aniversário serão sempre muito bem-vindos e apreciados.<br></p>
+                        <a href="SugestaoPresente.html">
+                            <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                        </a>
+                `;
+                break;
+        case 'guia':
+            conteudo = `
+                <h2>SUGESTÃO DE ROTEIRO PARA SETE DIAS NO RIO (Guia)</h2>
+                <p><i>“Esta recomendação de roteiro de sete dias foi elaborada para visitantes de primeira viagem ou para aqueles que planejam uma estadia mais 
+                    longa antes das festividades do fim de semana. Recomendamos que os hóspedes internacionais que residem nos Estados Unidos retornem para 
+                    casa até segunda-feira, 2 de maio, para evitar os preços mais altos das passagens aéreas para a Copa do Mundo.”</i><br> - 
+                    <b>Tiago Mazzotti</b></p>
+                     <a href="./Guia7Dias.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'kit':
+            conteudo = `
+                <h2>KIT VIAGEM - HOTÉIS & DESCONTOS</h2>
+                <p><i>“O Kit Viagem foi elaborado para que todos possam planejar sua viagem para o Rio de Janeiro de maneira eficaz e com descontos 
+                    exclusivos para meus convidados. O hotel Fairmont Rio oferece o maior desconto por produzir o evento principal do sábado, 30 de maio. 
+                    Uma seleção de hotéis quatro estrelas em Ipanema, bairro próximo ao evento, também faz parte da nossa seleção para opções democráticas.”</i>.”</i><br> - <b>Tiago Mazzotti</b></p>
+                     <a href="KitViagem.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'rsvp':
+            conteudo = `
+                <h2>CONFIRMAÇÃO DE PRESENÇA</h2>
+                <p>Preencha o formulário abaixo para confirmar sua presença no evento.</p>
+                <a href="ConfirmarPresenca.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'calendario':
+            conteudo = `
+                <h2>PROGRAMAÇÃO (DATAS E HORÁRIOS)</h2>
+                <p><i>“O final de semana entre os dias 29 e 31 de maio está reservado para diversas festividades além da festa Black Tie no 
+                    sábado à noite no Fairmont Rio. Espero que todos tenham a oportunidade de participar de um encontro casual no Pão de Açúcar para 
+                    iniciar as celebrações na sexta-feira à tarde e curar a ressaca com mimosas, bloody marys e drag queens no 
+                    domingo para um divertido brunch.”</i><br>- <b>Tiago Mazzotti</b></p>
+                <a href="Calendario.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'seguranca':
+            conteudo = `
+                <h2>DICA PARA SUA SEGURANÇA E DOS OUTROS CONVIDADOS</h2>
+                <p><i>"O Rio de Janeiro é a segunda cidade mais populosa do Brasil, conhecida por sua natureza deslumbrante, cultura vibrante e monumentos emblemáticos. É extremamente importante adaptar sua estratégia de viagem devido ao seu complexo contraste socioeconômico e aos limites seguros de seus bairros."</i><br>- <b>Tiago Mazzotti</b></p>
+                <a href="DicasSeguranca.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+        case 'cabelo':
+            conteudo = `
+                <h2>LISTA DE PROFICIONAIS PARA CABELO E MAKE UP</h2>
+                <p><i>Lista de profissionais para cabelo e make up estarão disponíveis neste site para consulta e agendamento após dia 15 de Março de 2026</i><br></p>
+                <a href="Cabelo_Maquiagem.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
+    }
+
+    infoBox.innerHTML = conteudo;
+    infoBox.style.display = 'block';
+}
+</script>
+</head>
+<body>
+    <a href="./index.html"><img src="./Imagens/LogoTiagoTransparente.png" alt="Logo do Tiago 40th" class="logo"></a>
+    
+    <div class="menu-container">
+        <a href="./DescricaoFesta.html"><button class="menu-btn">SITE PRINCIPAL</button></a>
+        <button class="menu-btn" onclick="mostrarInfo('kit')">KIT VIAGEM - HOTÉIS & DESCONTOS</button>
+        <button class="menu-btn" onclick="mostrarInfo('rsvp')">CONFIRMAR PRESENÇA</button>
+        <button class="menu-btn" onclick="mostrarInfo('calendario')">PROGRAMAÇÃO (DATAS E HORÁRIOS)</button>
+        <button class="menu-btn" onclick="mostrarInfo('seguranca')">DICAS DE SEGURANÇA</button>
+        <button class="menu-btn" onclick="mostrarInfo('guia')">7 DIAS NO RIO (GUIA)</button>
+        <button class="menu-btn" onclick="mostrarInfo('cabelo')">GLAM TEAM (CABELO & MAKE-UP)</button>
+        <button class="menu-btn" onclick="mostrarInfo('gifts')"> PRESENTES & CARTÕES</button>
+    </div>
+<div id="infoBox" class="info-area"></div>
+    <div class="cabecalho">
+        <h1>SUGESTÃO DE PRESENTE</h1>
+        <p><b>O aniversariante agradece imensamente o carinho dos convidados que desejarem presenteá-lo durante as festividades; 
+            no entanto, a entrega de qualquer artigo de valor não será permitida. No mês de abril, Tiago anunciará uma ONG, e os convidados 
+            terão a oportunidade de realizar doações diretamente ao projeto como alternativa. Cartões de aniversário serão sempre muito bem-vindos e apreciados.</b></p><br>
