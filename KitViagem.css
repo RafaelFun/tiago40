@@ -17,11 +17,28 @@ body {
     color: rgb(0, 0, 0);
     max-width: 800px;
 }
+.Importante{
+    text-align: center;
+    margin: 20px auto; /* centraliza horizontalmente */
+    background-color: #dd745ade;
+    padding: 30px;
+    border-radius: 20px;
+    display: block; /* ocupa linha inteira */
+    color: rgb(0, 0, 0);
+    max-width: 800px;
+}
+.Importante img{
+    width: 100%;       
+    height: auto;      
+    display: block;
+    margin: 0 auto;  
+    border-radius: 10px;  
+}
 .Imagem img {
-    width: 100%;       /* faz a imagem ocupar toda a largura do container */
-    max-width: 600px;  /* limita a largura máxima */
-    height: auto;      /* mantém a proporção da imagem */
-    border-radius: 10px; /* opcional: cantos arredondados */
+    width: 100%;        
+    max-width: 600px;  
+    height: auto;      
+    border-radius: 10px; 
     display: block;
     margin: 0 auto;    /* centraliza a imagem */
 }
