@@ -12,18 +12,7 @@ function mostrarInfo(tipo) {
     const infoBox = document.getElementById('infoBox');
     let conteudo = '';
 
-    switch(tipo) {
-        case 'gifts':
-                conteudo = `
-                    <h2>PRESENTES & CARTÕES</h2>
-                    <p>O aniversariante agradece imensamente o carinho dos convidados que desejarem presenteá-lo durante as festividades; 
-                        no entanto, a entrega de qualquer artigo de valor não será permitida. No mês de abril, Tiago anunciará uma ONG, e os convidados 
-                        terão a oportunidade de realizar doações diretamente ao projeto como alternativa. Cartões de aniversário serão sempre muito bem-vindos e apreciados.<br></p>
-                        <a href="SugestaoPresente.html">
-                            <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
-                        </a>
-                `;
-                break;
+   switch(tipo) {
         case 'guia':
             conteudo = `
                 <h2>SUGESTÃO DE ROTEIRO PARA SETE DIAS NO RIO (Guia)</h2>
@@ -36,12 +25,26 @@ function mostrarInfo(tipo) {
                     </a>
             `;
             break;
+        case 'trajes':
+            conteudo = `
+                <h2>DRESS CODE </h2>
+                <p><i>“O maior aprendizado como Produtor de Eventos é a habilidade de transformar uma ocasião em uma narrativa com temas, fantasias e 
+                    recordações para o resto da vida. O dress code é uma parte essencial para criar algo único e memorável. O black tie com Inspirações 
+                    Tropicais foi a minha escolha para que todos os convidados possam despertar o seu lado criativo, sair da zona de conforto e transformar o 
+                    ambiente em um momento único, em uma noite de glamour no inverno tropical no Rio de Janeiro.”</i>
+                     <br> - <b>Tiago Mazzotti.</b> </p>
+                     <a href="Trajes.html">
+                        <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
+                    </a>
+            `;
+            break;
         case 'kit':
             conteudo = `
                 <h2>KIT VIAGEM - HOTÉIS & DESCONTOS</h2>
-                <p><i>“O Kit Viagem foi elaborado para que todos possam planejar sua viagem para o Rio de Janeiro de maneira eficaz e com descontos 
-                    exclusivos para meus convidados. O hotel Fairmont Rio oferece o maior desconto por produzir o evento principal do sábado, 30 de maio. 
-                    Uma seleção de hotéis quatro estrelas em Ipanema, bairro próximo ao evento, também faz parte da nossa seleção para opções democráticas.”</i>.”</i><br> - <b>Tiago Mazzotti</b></p>
+                <p><i>“O Kit Viagem foi elaborado para que todos possam planejar sua viagem para o Rio de Janeiro de maneira eficaz e com descontos exclusivos 
+                    para meus convidados. O hotel Fairmont Rio oferece o maior desconto por produzir o evento principal do sábado, 30 de maio. Uma seleção de 
+                    hotéis quatro estrelas em Ipanema, bairro próximo ao evento, também faz parte da nossa seleção para opções democráticas.”</i>
+                    <br> - <b>Tiago Mazzotti</b></p>
                      <a href="KitViagem.html">
                         <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
                     </a>
@@ -76,8 +79,8 @@ function mostrarInfo(tipo) {
                         <button class="menu-btn" style="margin-top: 10px;">Veja mais detalhes</button>
                     </a>
             `;
-            break;
-        case 'cabelo':
+            break;    
+            case 'cabelo':
             conteudo = `
                 <h2>LISTA DE PROFICIONAIS PARA CABELO E MAKE UP</h2>
                 <p><i>Lista de profissionais para cabelo e make up estarão disponíveis neste site para consulta e agendamento após dia 15 de Março de 2026</i><br></p>
@@ -87,6 +90,7 @@ function mostrarInfo(tipo) {
             `;
             break;
     }
+
 
     infoBox.innerHTML = conteudo;
     infoBox.style.display = 'block';
@@ -98,13 +102,13 @@ function mostrarInfo(tipo) {
     
     <div class="menu-container">
         <a href="./DescricaoFesta.html"><button class="menu-btn">SITE PRINCIPAL</button></a>
-        <button class="menu-btn" onclick="mostrarInfo('kit')">KIT VIAGEM - HOTÉIS & DESCONTOS</button>
+         <button class="menu-btn" onclick="mostrarInfo('kit')">KIT VIAGEM - HOTÉIS & DESCONTOS</button>
         <button class="menu-btn" onclick="mostrarInfo('rsvp')">CONFIRMAR PRESENÇA</button>
         <button class="menu-btn" onclick="mostrarInfo('calendario')">PROGRAMAÇÃO (DATAS E HORÁRIOS)</button>
+        <button class="menu-btn" onclick="mostrarInfo('trajes')">DRESS CODE</button>
         <button class="menu-btn" onclick="mostrarInfo('seguranca')">DICAS DE SEGURANÇA</button>
         <button class="menu-btn" onclick="mostrarInfo('guia')">7 DIAS NO RIO (GUIA)</button>
         <button class="menu-btn" onclick="mostrarInfo('cabelo')">GLAM TEAM (CABELO & MAKE-UP)</button>
-        <button class="menu-btn" onclick="mostrarInfo('gifts')"> PRESENTES & CARTÕES</button>
     </div>
 <div id="infoBox" class="info-area"></div>
     <div class="cabecalho">
