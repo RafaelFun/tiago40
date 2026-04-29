@@ -38,6 +38,24 @@ body {
     margin-top: -10px;
 }
 
+.panfleto {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.cabecalhoCANCELADO {
+    text-align: center;
+    margin: 20px auto; /* centraliza horizontalmente */
+    background-color: #e70000a2;
+    padding: 30px;
+    border-radius: 20px;
+    display: block; /* ocupa linha inteira */
+    color: white;
+    max-width: 800px; /* limita a largura do bloco */
+}
+
 .menu-btn {
     background-color: #DAA520;
     color: white;
